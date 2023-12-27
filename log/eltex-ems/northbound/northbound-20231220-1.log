@@ -1,0 +1,98 @@
+2023-12-20T00:00:01,453 [http-nio-8081-exec-5] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:00:01,463 [http-nio-8081-exec-5] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:00:01,463 [http-nio-8081-exec-5] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/ping; time (ms) = 0; ; Status = OK].
+
+
+2023-12-20T00:00:01,463 [http-nio-8081-exec-5] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:00:01,478 [http-nio-8081-exec-6] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:00:01,478 [http-nio-8081-exec-6] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:00:01,480 [http-nio-8081-exec-6] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=45200]; command = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-19_23-57-38.828; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:00:01.479; additionalCommands.size = 0 ]
+2023-12-20T00:00:01,498 [http-nio-8081-exec-6] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-19_23-57-38.828; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:00:01.479; additionalCommands.size = 0 ]
+2023-12-20T00:00:01,499 [http-nio-8081-exec-6] INFO  Northbound NorthboundServlet.parseResponse(line:723). Ret code 0 at action getVersion
+2023-12-20T00:00:01,500 [http-nio-8081-exec-6] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/getVersion; time (ms) = 22; ; Status = OK].
+
+
+2023-12-20T00:00:01,500 [http-nio-8081-exec-6] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:10:01,761 [http-nio-8081-exec-1] ERROR Northbound NorthboundServlet.init(line:134). --------------------------------- NorthboundServlet.init: starting main servlet... ---------------------
+2023-12-20T00:10:01,767 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:10:01,767 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:10:01,771 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/ping; time (ms) = 0; ; Status = OK].
+
+
+2023-12-20T00:10:01,771 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:10:01,781 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:10:01,781 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:10:01,794 [http-nio-8081-exec-2] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=34594]; command = [ Command: action = AUTH_USER; objectType = SYSTEM; sessionId = -1; guiModuleId = null; clientInetAddress = null; addToResponse = false; needLogs = false; function = Function{mode=USER, type=LOGIN, objId=-1, treeObj=null, tabName='null', methodName='AUTH_USER', description='Northbound Authorization', object=null, processId='null', logs=null}; commandId = CMD:AUTH_USER_SYSTEM_2023-12-20_00:10:01.788; additionalCommands.size = 0 ]
+2023-12-20T00:10:01,987 [http-nio-8081-exec-2] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = AUTH_USER; objectType = SYSTEM; sessionId = -1; guiModuleId = null; clientInetAddress = null; addToResponse = false; needLogs = false; function = Function{mode=USER, type=LOGIN, objId=-1, treeObj=null, tabName='null', methodName='AUTH_USER', description='Northbound Authorization', object=null, processId='null', logs=null}; commandId = CMD:AUTH_USER_SYSTEM_2023-12-20_00:10:01.788; additionalCommands.size = 0 ]
+2023-12-20T00:10:01,988 [http-nio-8081-exec-2] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=34596]; command = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:10:01.988; additionalCommands.size = 0 ]
+2023-12-20T00:10:02,001 [http-nio-8081-exec-2] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:10:01.988; additionalCommands.size = 0 ]
+2023-12-20T00:10:02,001 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.parseResponse(line:723). Ret code 0 at action getVersion
+2023-12-20T00:10:02,002 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/getVersion; time (ms) = 221; ; Status = OK].
+
+
+2023-12-20T00:10:02,002 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:15:01,154 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:15:01,155 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:15:01,155 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/ping; time (ms) = 0; ; Status = OK].
+
+
+2023-12-20T00:15:01,155 [http-nio-8081-exec-2] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:15:01,169 [http-nio-8081-exec-4] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:15:01,169 [http-nio-8081-exec-4] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:15:01,170 [http-nio-8081-exec-4] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=34966]; command = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:15:01.169; additionalCommands.size = 0 ]
+2023-12-20T00:15:01,180 [http-nio-8081-exec-4] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:15:01.169; additionalCommands.size = 0 ]
+2023-12-20T00:15:01,180 [http-nio-8081-exec-4] INFO  Northbound NorthboundServlet.parseResponse(line:723). Ret code 0 at action getVersion
+2023-12-20T00:15:01,181 [http-nio-8081-exec-4] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/getVersion; time (ms) = 12; ; Status = OK].
+
+
+2023-12-20T00:15:01,181 [http-nio-8081-exec-4] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:20:01,354 [http-nio-8081-exec-7] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:20:01,354 [http-nio-8081-exec-7] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:20:01,354 [http-nio-8081-exec-7] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/ping; time (ms) = 0; ; Status = OK].
+
+
+2023-12-20T00:20:01,354 [http-nio-8081-exec-7] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:20:01,371 [http-nio-8081-exec-9] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:20:01,371 [http-nio-8081-exec-9] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:20:01,371 [http-nio-8081-exec-9] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=35020]; command = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:20:01.371; additionalCommands.size = 0 ]
+2023-12-20T00:20:01,377 [http-nio-8081-exec-9] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:20:01.371; additionalCommands.size = 0 ]
+2023-12-20T00:20:01,377 [http-nio-8081-exec-9] INFO  Northbound NorthboundServlet.parseResponse(line:723). Ret code 0 at action getVersion
+2023-12-20T00:20:01,378 [http-nio-8081-exec-9] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/getVersion; time (ms) = 7; ; Status = OK].
+
+
+2023-12-20T00:20:01,378 [http-nio-8081-exec-9] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:25:01,526 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:25:01,527 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:25:01,527 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/ping; time (ms) = 0; ; Status = OK].
+
+
+2023-12-20T00:25:01,528 [http-nio-8081-exec-1] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request
+2023-12-20T00:25:01,542 [http-nio-8081-exec-3] INFO  Northbound NorthboundServlet.doGet(line:177). Start
+------------------ Northbound start doGet request ----------------------
+2023-12-20T00:25:01,542 [http-nio-8081-exec-3] INFO  Northbound NorthboundServlet.doPost(line:478). Start
+------------------ Northbound start doPost request ----------------------
+2023-12-20T00:25:01,543 [http-nio-8081-exec-3] INFO  Northbound NorthboundSocketConnector.send(line:80). Start. Create socket = localhost:9310. timeOut (ms) = 60000; socket = Socket[addr=localhost/127.0.0.1,port=9310,localport=35570]; command = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:25:01.542; additionalCommands.size = 0 ]
+2023-12-20T00:25:01,552 [http-nio-8081-exec-3] INFO  Northbound NorthboundSocketConnector.send(line:120). Finish. send data. request = [ Command: action = NORTHBOUND; objectType = SYSTEM; sessionId = northbound_127.0.0.1_2023-12-20_00-10-01.947; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=-1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:NORTHBOUND_northbound_SYSTEM_2023-12-20_00:25:01.542; additionalCommands.size = 0 ]
+2023-12-20T00:25:01,553 [http-nio-8081-exec-3] INFO  Northbound NorthboundServlet.parseResponse(line:723). Ret code 0 at action getVersion
+2023-12-20T00:25:01,553 [http-nio-8081-exec-3] INFO  Northbound NorthboundServlet.doPost(line:594). Finish[/getVersion; time (ms) = 11; ; Status = OK].
+
+
+2023-12-20T00:25:01,553 [http-nio-8081-exec-3] INFO  Northbound NorthboundServlet.doGet(line:200). Finish doGet request

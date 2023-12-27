@@ -1,0 +1,1075 @@
+2023-12-21T16:50:12,194 [main] ERROR Kernel Server.main(line:230). 
+
+-------------------------------------- START EMS_SERVER --------------------------------------------
+2023-12-21T16:50:12,215 [main] ERROR Kernel Server.main(line:234). EMS version (from server.jar manifest) : 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T16:50:12,217 [main] ERROR Kernel Server$1.println(line:375). ----- test ERR ------- 
+2023-12-21T16:50:12,256 [main] INFO  Kernel ServerShutdownHook.<init>(line:22). Set Shutdown
+2023-12-21T16:50:12,256 [main] INFO  Kernel ServerBuilder.createServerShutdownHook(line:55). init: Add ShutdownHook.
+2023-12-21T16:50:12,300 [main] ERROR Kernel Server.init(line:403). init: Server version = 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T16:50:12,300 [main] ERROR Kernel Server.init(line:405). JAVA version = 1.8.0_362
+2023-12-21T16:50:12,367 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/config.txt
+2023-12-21T16:50:12,398 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/system-config.txt
+2023-12-21T16:50:12,416 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/snmp/OntActivationSender.cfg
+2023-12-21T16:50:12,466 [main] INFO  Kernel Server.init(line:422). init: ACCESS_TYPE from system-config.txt = BY_DOMAIN
+2023-12-21T16:50:12,649 [main] INFO  Kernel ServerModule.initDBPools(line:126). Initialize pools for module 'system'. pools: [tree, event, ont, syslog]
+2023-12-21T16:50:12,770 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_ems?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&noAccessToProcedureBodies=true&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='tree', maxPoolSize=20, inUse=true, sshPort=0}
+2023-12-21T16:50:13,224 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool tree
+2023-12-21T16:50:13,772 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Starting...
+2023-12-21T16:50:13,793 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,352 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Start completed.
+2023-12-21T16:50:15,353 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_alert?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='event', maxPoolSize=32, inUse=true, sshPort=0}
+2023-12-21T16:50:15,353 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool event
+2023-12-21T16:50:15,353 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Starting...
+2023-12-21T16:50:15,390 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,435 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Start completed.
+2023-12-21T16:50:15,436 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_ont?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='ont', maxPoolSize=40, inUse=true, sshPort=0}
+2023-12-21T16:50:15,436 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool ont
+2023-12-21T16:50:15,437 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Starting...
+2023-12-21T16:50:15,437 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,512 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Start completed.
+2023-12-21T16:50:15,512 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/Syslog?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='syslog', maxPoolSize=4, inUse=true, sshPort=0}
+2023-12-21T16:50:15,512 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool syslog
+2023-12-21T16:50:15,513 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Starting...
+2023-12-21T16:50:15,542 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,576 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Start completed.
+2023-12-21T16:50:15,945 [main] INFO  Kernel ServerBuilder.loadCurrentLang(line:110). configuredLocale from DB = ru_RU
+2023-12-21T16:50:15,946 [main] INFO  Kernel Server.init(line:461). currentLang = ru_RU
+2023-12-21T16:50:19,948 [main] INFO  Kernel ServerBuilder.createAllModules(line:362). Create modules: remove disable modules = [
+[ ServerModule :
+ actionFile		= null
+ elementsFile		= null
+ sqlInstallFile		= null
+ sqlUninstallFile		= null
+ monitorsFile		= null
+ depends		= []
+ config		= params = {sorm2.url=http://localhost:7071, sorm2.read.write.timeout.s=11, sorm2.connect.timeout.s=11, sorm2.enabled=false}
+ licenceList		= []
+ dbPools		= []
+[ Module :
+ name		= sorm2
+ config		= params = {sorm2.url=http://localhost:7071, sorm2.read.write.timeout.s=11, sorm2.connect.timeout.s=11, sorm2.enabled=false}
+ title		= SORM2
+ descr		= Eltex.SORM2.replicator
+ maxDevice		= -1
+ deviceType		= SORM2
+ enable		= false
+ guiClass		= null
+]
+]]
+2023-12-21T16:50:23,753 [main] INFO  Kernel SnmpEngine.<init>(line:123). SNMP-transport successfully created.
+2023-12-21T16:50:29,368 [main] INFO  Kernel ServerBuilder.checkModuleLic(line:631). ModuleLic delList : [Multi-Vendor, Cluster]
+2023-12-21T16:50:29,369 [main] INFO  acs ServerModule.initDBPools(line:126). Initialize pools for module 'acs'. pools: [cache, inf, cmds, cpe]
+2023-12-21T16:50:29,394 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/acscache?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='cache', maxPoolSize=2, inUse=true, sshPort=0}
+2023-12-21T16:50:29,394 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool cache
+2023-12-21T16:50:29,395 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - cache - Starting...
+2023-12-21T16:50:29,395 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:30,461 [main] ERROR Kernel Server$1.println(line:375). [main] ERROR com.zaxxer.hikari.pool.HikariPool - cache - Exception during pool initialization.
+2023-12-21T16:50:30,462 [main] ERROR Kernel Server$1.print(line:370). com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T16:50:30,462 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T16:50:30,464 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+2023-12-21T16:50:30,464 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2023-12-21T16:50:30,465 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2023-12-21T16:50:30,465 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2023-12-21T16:50:30,466 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.HikariConnectionPool.<init>(HikariConnectionPool.java:49)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.createPool(MultiConnectionPool.java:73)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.addPools(MultiConnectionPool.java:61)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.ConnectionsDB.init(ConnectionsDB.java:233)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.module.ServerModule.initDBPools(ServerModule.java:127)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.ServerBuilder.checkModules(ServerBuilder.java:465)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.init(Server.java:502)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.main(Server.java:252)
+2023-12-21T16:50:30,473 [main] ERROR Kernel ServerBuilder.checkModules(line:470). Disable module 'acs'; checkDb error : Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T16:50:30,936 [main] INFO  radius ServerModule.initDBPools(line:126). Initialize pools for module 'radius'. pools: [radius]
+2023-12-21T16:50:30,937 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/radius?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='radius', maxPoolSize=40, inUse=true, sshPort=0}
+2023-12-21T16:50:30,937 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool radius
+2023-12-21T16:50:30,937 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Starting...
+2023-12-21T16:50:30,938 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:31,037 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Start completed.
+2023-12-21T16:50:31,180 [main] INFO  wirelessCommon ServerModule.initDBPools(line:126). Initialize pools for module 'wirelessCommon'. pools: [wireless]
+2023-12-21T16:50:31,180 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/wireless?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='wireless', maxPoolSize=30, inUse=true, sshPort=0}
+2023-12-21T16:50:31,180 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool wireless
+2023-12-21T16:50:31,180 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Starting...
+2023-12-21T16:50:31,181 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:31,217 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Start completed.
+2023-12-21T16:50:31,308 [main] INFO  Kernel ServerBuilder.checkModules(line:487). Create modules: remove modules with wrong DB (module.checkDb) = [
+[ ServerModule :
+ actionFile		= conf/module/acs/acs_action.xml
+ elementsFile		= conf/module/acs/acs_elements.xml
+ sqlInstallFile		= null
+ sqlUninstallFile		= null
+ monitorsFile		= conf/module/acs/acs_monitors.xml
+ depends		= [linuxServerCommon]
+ config		= 
+[ AcsConfig :
+	- cpeLastContactGreenTime = 7200
+	- cpeLastContactRedTime = 86400
+	- acsdLocale = true
+	- localeDir = /var/acsd
+	- remoteHost = 192.168.26.84
+	- remoteDir = /acs_root
+	- remoteLogin = acs
+	- cpeSelectedMax = 6
+	- isUseRepairTable = true
+	- useSerialAsHex = false
+	- useBusyMode = false
+	- busyTimeoutMaxMsec = 50000
+	- busyStepMsec = 500
+	- all params = params = {gui.cpe.contact.red_time=86400, use_serial_in_hex=false, db.use.auto.repair=true, busy.step.msec=500, acsd.locale.file_dir=/var/acsd, cpe.selected.max.size=6, gui.cpe.contact.green_time=7200, group.direct.timeout.sec=3600, busy.use.mode=false, busy.timeout.max.msec=50000, acsd.if.version=1.6.1}
+]
+ licenceList		= [ACS]
+ dbPools		= [cache, inf, cmds, cpe]
+[ Module :
+ name		= acs
+ config		= 
+[ AcsConfig :
+	- cpeLastContactGreenTime = 7200
+	- cpeLastContactRedTime = 86400
+	- acsdLocale = true
+	- localeDir = /var/acsd
+	- remoteHost = 192.168.26.84
+	- remoteDir = /acs_root
+	- remoteLogin = acs
+	- cpeSelectedMax = 6
+	- isUseRepairTable = true
+	- useSerialAsHex = false
+	- useBusyMode = false
+	- busyTimeoutMaxMsec = 50000
+	- busyStepMsec = 500
+	- all params = params = {gui.cpe.contact.red_time=86400, use_serial_in_hex=false, db.use.auto.repair=true, busy.step.msec=500, acsd.locale.file_dir=/var/acsd, cpe.selected.max.size=6, gui.cpe.contact.green_time=7200, group.direct.timeout.sec=3600, busy.use.mode=false, busy.timeout.max.msec=50000, acsd.if.version=1.6.1}
+]
+ title		= ACS
+ descr		= Eltex.ACS
+ maxDevice		= -1
+ deviceType		= ACS
+ enable		= false
+ guiClass		= org.eltex.ems.web.gui.module.acs.AcsGuiModule
+]
+]]
+2023-12-21T16:50:31,375 [main] ERROR Kernel ServerModule.initDb(line:197). Module gePon start config: {min_nterg14_version=-1.0.0, tftp_host_no_vlan=10.0.2.15, nterg14_image=, max_update=5, nterg14_revb_image=, min_nterg24_version=-1.0.0, max_error=5}
+2023-12-21T16:50:31,523 [main] ERROR Kernel ServerModule.initDb(line:197). Module apb start config: {}
+2023-12-21T16:50:31,525 [main] ERROR Kernel ServerModule.initDb(line:197). Module pcrf start config: {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T16:50:31,542 [main] ERROR Kernel ServerModule.initDb(line:197). Module voipCommon start config: {auto.change.ports.by.traps=false}
+2023-12-21T16:50:31,544 [main] ERROR Kernel ServerModule.initDb(line:197). Module gPon start config: {gpon.version_and_eq_req=true, gpon.rssi_req=true, gpon.ont.tftp.host=10.0.2.15, gui.use_gpon_serial_in_hex=false}
+2023-12-21T16:50:31,554 [main] ERROR Kernel ServerModule.initDb(line:197). Module netconf start config: {netconf.mongodb.url=mongodb://localhost:27017/netconf, netconf.module.enable=false}
+2023-12-21T16:50:31,563 [main] ERROR Kernel ServerModule.initDb(line:197). Module radius start config: {radius.restart.enabled=true, radius.restart.timeout=45, radius.service.name=eltex-radius, ems.host.ip.to.radius=127.0.0.1, radius.localhost.secret=eltex, radius.restart.min_interval=60}
+2023-12-21T16:50:31,568 [main] ERROR Kernel ServerModule.initDb(line:197). Module msan start config: {fxs.autoreload.time.s=0}
+2023-12-21T16:50:31,579 [main] ERROR Kernel ServerModule.initDb(line:197). Module airtune start config: {airtune.api.timeout=5, airtune.api.port=8089, airtune.api.conn_timeout=300, airtune.api.host=10.0.2.15, airtune.api.protocol=http}
+2023-12-21T16:50:33,702 [main] ERROR Kernel ServerModule.initDb(line:197). Module ltp start config: {ltp_n.autocommit=false}
+2023-12-21T16:50:33,888 [main] ERROR Kernel ServerModule.initDb(line:197). Module ftpserver start config: {tftp.boot=/tftpboot, ftp.config.dir=ems, ftp.addr=10.0.2.15, ftp.station.images=station_images, ftp.boot.images=uboot_images, ftp.login=ftp, ftp.password=ftp, ftp.port=21}
+2023-12-21T16:50:33,895 [main] ERROR Kernel ServerModule.initDb(line:197). Module softwlc.nbi start config: {nbi.connection.timeout.sec=30, nbi.url=http://localhost:8080/axis2/services/RadiusNbiService?wsdl, nbi.enabled=true, nbi.password=softwlc, nbi.username=softwlc_service, nbi.request.timeout.sec=120}
+2023-12-21T16:50:33,896 [main] INFO  NBI NbiServerModule.updateParams(line:59). Set new NBI state REINIT, previous NONE
+2023-12-21T16:50:33,921 [main] ERROR Kernel ServerModule.initDb(line:197). Module system start config: {gui.settings.separator.trap=, snmp.timeout.prevention=true, alert.mail.port=25, tree.object.attention.alert.priority=CRITICAL, conf.after.add.or.connect.ok=false, snmp.sender.ssl_protocol=TLSv1.2, snmp.sender.inform_timeout=1000, snmp.allow=true, save.filter.value=true, db.tmp.files.dir=/tmp, disable.ap.reset=false, current.locale=ru_RU, alert.syslog.copy=false, snmp.sender.inform_retries=2, monitoring.use=false, tomcat.url=http://10.0.2.15:8080, trap.handler.max_queue=20, snmp.sender.priority.list=CRITICAL, MAJOR, trap.handler.type=AUTO, ping.handler_not_find=CRITICAL, alert.mail.encryption=NONE, use.initialization.link.params=false, tmp.dir=/tmp/ems, kladr.token=, snmp.sender.manager_port=162, table.rowcount=true, ip.adress=10.0.2.15, geocoder.key=, alert.subject=Eltex.EMS, check_hostname=false, support.email.address=, snmp.sender.enable=false, alert.password=password, alert.login=login, trap.handler.max_ip=5, async.process.pool.size=60, user_access_type=BY_DOMAIN, mode.choiceactivealerts=false, snmp.sender.community=public, snmp.sender.separator=, gui.frame.title=Eltex.EMS, alert.set.finish.date.auto=false, snmp.sender.coldstart_enable=true, snmp.sender.enterprise=1.3.6.1.4.1.35265.2.1, snmp.sender.notif_type=1.3.6.1.4.1.35265.3.102, monitor.log.level=ERROR, alert.from=login@mail.server, use.geocoder=GOOGLE, tomcat.urlembeded=http://10.0.2.15:8080, alert.body=Message from '%s', date '%s', type '%s'., alert.separator=, created.session.ping.timeout=121, gui.settings.separator=, http.timeout=300, sync.after.add.or.connect.ok=true, keep.processes.time=24, timeout.connect.lost=120, icmp.allow=true, shared.files.dir=/var/ems-data, snmp.trap.queue.size=20000, log.server.commands=, gui.hide_help_buttons=false, snmp.sender.version=trapv2, mandatory.initialization.link.params=false, snmp.min_timeout.msec=300, alert.enable=false, ip.pingbuffer.pool.size=10, trap.forbid=false, snmp.sender.transliterate=true, alert.mailserver=mail.server, acs.gui.mode=false, ip.pingbuffer.period=60, user.trap=false, ip.pingbuffer.clear.timeout=7200, snmp.sender.manager_ip=192.168.1.1, ip.pingbuffer.flags=-r3 -i 5 -p 500, mode.autoselect=false, ip.pingbuffer.devlimit=1000}
+2023-12-21T16:50:33,985 [main] ERROR Kernel ServerModule.initDb(line:197). Module passwordGenerator start config: {paul.port=8098, paul.connection_timeout=300, paul.host=127.0.0.1, paul.timeout=5}
+2023-12-21T16:50:34,003 [main] ERROR Kernel ServerModule.initDb(line:197). Module wirelessCommon start config: {wificab.url=http://localhost:8080/wifi-cab/, memory.time.sec=604800, copy.ems.name.to.hostname=false, auto.start.initialization=true, pwd.notifier.separator=, allow.collect.total_users=false, pwd.notifier.enabled=false, jerry.service.url=localhost:50051, allow.radius.setting=false, init.link.key.types=69, pwd.notifier.recipients=, wificab.disable_certificate_check=false, need.environment.params=true, wids.service.url=http://localhost:9095, allow.set.ssid.to.wds=false, dyn.tunnel.scheduler.delay.time.seconds=60, wificab.secret=c8b764b4f2befbcd9bd9da81552f555a, wificab.timeout=60, wificab.enabled=true, wids.separator=, disable.ofter.ssid=true, need.params.in.radius.accounting=false, jerry.enabled=true, jerry.separator=, wificab.separator=, dhcp.static.hosts=/etc/dhcp/static/hosts.conf, init.fail.delete=true, alert.associate_client.send_step=3, allow.collect.uplink_load=false}
+2023-12-21T16:50:34,003 [main] INFO  Kernel WirelessCommonServerModule.deleteTotalUsersStatistics(line:355). [ACTIVE_USERS] deleteTotalUsersStatistics - Not implemented!!!
+2023-12-21T16:50:34,063 [main] INFO  Kernel InitRulesStorage.getInitRules(line:557). GET_ApInitParam: pageStart = 0; pageSize = 2147483647
+2023-12-21T16:50:34,066 [main] INFO  Kernel InitRulesStorage.getInitRules(line:606). GET_ApInitParam: INIT_RULES rules.size = 0
+2023-12-21T16:50:34,088 [main] ERROR Kernel ServerModule.initDb(line:197). Module tl1 start config: {process.profile.by.text=true, telnet.port=9340, tid.mode=NAME, telnet.handler.pool.size=5, retries.count=1, synchronize.pon.automatically=true, max.command.time=180, telnet.use=false, telnet.connection.timeout.sec=0, filter.global.enabled=false, commander.pool.size=12}
+2023-12-21T16:50:34,089 [main] ERROR Kernel ServerModule.initDb(line:197). Module tftpserver start config: {tftp.boot.images=uboot_images, tftp.station.images=station_images, tftp.boot=/tftpboot, tftp.addr=10.0.2.15, tftp.config.dir=ems, tftp.port=69}
+2023-12-21T16:50:34,091 [main] ERROR Kernel ServerModule.initDb(line:197). Module ponCommon start config: {ont.min.count=5, ont.changes.server.handle=true, sync.interactive.mode.needSync=true, ont.changes.publish.data=true}
+2023-12-21T16:50:34,106 [main] ERROR Kernel ServerModule.initDb(line:197). Module ma4000 start config: {autocommit=true, maxSlotSize=16}
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:90). nteRgTftpSubdir = nte_images
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:92). nteRg14Image = 
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:93). nteRg14revbImage = 
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:95). host0 = 10.0.2.15
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:105). GePonServerModule init2 nteDir = nte_images
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:131). minNteRg14Version = -1.0.0
+2023-12-21T16:50:34,197 [main] ERROR gepon GePonServerModule.init2(line:146). FW file for updating NTE-RG:revB not assigned. Auto-update of FW NTE-RG14xx:rev.B is impossible!
+2023-12-21T16:50:34,197 [main] INFO  gepon GePonServerModule.init2(line:153). minNteRg24Version = -1.0.0
+2023-12-21T16:50:34,571 [main] ERROR Kernel ServerBuilder.checkModulesWithLicence(line:980). Devices for delete from Licence : {ACS=[ HonestGroup: title=ACS server; countLic=1; hasLic=0; typeList=[ACS] ], MES5448=[ HonestGroup: title=MES 5448; countLic=3; hasLic=0; typeList=[MES5448] ], WiFi=; maxSize = 3; currentSize = 0}
+2023-12-21T16:50:34,584 [main] INFO  Kernel Server.init(line:508). [MODULES] total modules: size = 44; names = GenericAp airtune apb dhcp esr ftpserver gPon gePon linuxServerCommon lte ltp ma4000 md me mes mes3000L monitoring msan msr mxa mxl2e mysql netconf passwordGenerator pcrf plc8 ponCommon portal radius sbc smg softwlc.nbi ssw system tau tftpserver tl1 topgate uep voipCommon wb wep wirelessCommon wop 
+2023-12-21T16:50:37,357 [main] INFO  Kernel Server.init(line:515). [MSG] AllInfo = -------- MSG --------
+MSG_info (2 lang) :  ru_RU/25648 en_US/25639; current = ru_RU; default = en_US
+ru_RU (current), en_US (default)
+1) lang: ru_RU size:25648
+2) lang: en_US size:25639
+
+2023-12-21T16:50:37,372 [main] INFO  Kernel Server.init(line:524). init: ACCESS_TYPE release = BY_DOMAIN
+2023-12-21T16:50:38,309 [main] INFO  Kernel Server.init(line:545). init: CashCheckers = {ASSOCIATE_CLIENTS=[ AssociateClientsChecker : sendStepSec = 3; mapsSize =  0 ]}
+2023-12-21T16:50:38,317 [main] INFO  Kernel Listener.init(line:69). Create PLAIN server socket. (GuiListener2v:9310)
+2023-12-21T16:50:42,651 [main] INFO  Kernel InitRulesStorage.getInitRules(line:557). GET_ApInitParam: pageStart = 0; pageSize = 2147483647
+2023-12-21T16:50:42,652 [main] INFO  Kernel InitRulesStorage.getInitRules(line:606). GET_ApInitParam: INIT_RULES rules.size = 0
+2023-12-21T16:50:43,097 [main] ERROR Acs AcsCommander.initAcsConfig(line:38). Отсутствует модуль 'acs'
+2023-12-21T16:50:43,569 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2023-12-21T16:50:43,574 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2023-12-21T16:50:43,676 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-12-21T16:50:43,677 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v.1.8.6 created.
+2023-12-21T16:50:43,687 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.eltex.ems.web.server.db.monitor.EltexRamJobStore - RAMJobStore initialized.
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v1.8.6) 'Monitor' with instanceId '1'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.eltex.ems.web.server.db.monitor.EltexRamJobStore' - which does not support persistence. and is not clustered.
+
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'Monitor' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 1.8.6
+2023-12-21T16:50:45,112 [main] INFO  Kernel EltexTrapSender.tryInitTransport(line:572). EltexTrapSender transport was initialized/reinitialized
+2023-12-21T16:50:45,347 [main] INFO  Kernel StockOLTTermoQueue.loadTermoDevTypes(line:166). --- initExternalXml parse FILE result : xml = 'conf/termoMonitor.xml'; DevTypes = '{TAU72megaco=[ DeviceTermoInfo: fullTypeObj = TAU72megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MA4000=[ DeviceTermoInfo: fullTypeObj = MA4000; skip = false; sensorsMap = [] ]
+, SMG2016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG2016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2408CP=[ DeviceTermoInfo: fullTypeObj = MES2408CP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WEP-12ac=[ DeviceTermoInfo: fullTypeObj = WEP-12ac; skip = true; sensorsMap = [] ]
+, MES2424FB=[ DeviceTermoInfo: fullTypeObj = MES2424FB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016M=[ DeviceTermoInfo: fullTypeObj = SMG1016M; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac-RevC=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-RevC; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, ESR1200=[ DeviceTermoInfo: fullTypeObj = ESR1200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, WOP-12ac-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU72sip=[ DeviceTermoInfo: fullTypeObj = TAU72sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES3108F=[ DeviceTermoInfo: fullTypeObj = MES3108F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3124F=[ DeviceTermoInfo: fullTypeObj = MES3124F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES2428B=[ DeviceTermoInfo: fullTypeObj = MES2428B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TopGATE-6xx=[ DeviceTermoInfo: fullTypeObj = TopGATE-6xx; skip = true; sensorsMap = [] ]
+, WOP-12ac-ER=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, ESR-12V=[ DeviceTermoInfo: fullTypeObj = ESR-12V; skip = false; sensorsMap = [Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, NODE=[ DeviceTermoInfo: fullTypeObj = NODE; skip = true; sensorsMap = [] ]
+, TAU24revBsip=[ DeviceTermoInfo: fullTypeObj = TAU24revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES2448=[ DeviceTermoInfo: fullTypeObj = MES2448; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2326=[ DeviceTermoInfo: fullTypeObj = MES2326; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU32Msip=[ DeviceTermoInfo: fullTypeObj = TAU32Msip; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SMG1016M-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG1016M-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2428P=[ DeviceTermoInfo: fullTypeObj = MES2428P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, EMS_SERVER=[ DeviceTermoInfo: fullTypeObj = EMS_SERVER; skip = true; sensorsMap = [] ]
+, ESR-20=[ DeviceTermoInfo: fullTypeObj = ESR-20; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0] ]
+, MES2428T=[ DeviceTermoInfo: fullTypeObj = MES2428T; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, RADIUS=[ DeviceTermoInfo: fullTypeObj = RADIUS; skip = true; sensorsMap = [] ]
+, MES5324=[ DeviceTermoInfo: fullTypeObj = MES5324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU32MrevBsip=[ DeviceTermoInfo: fullTypeObj = TAU32MrevBsip; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES5448=[ DeviceTermoInfo: fullTypeObj = MES5448; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.0, Switch[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.1, FPGA[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.2, LPHY[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.3, RPHY[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.4] ]
+, MES2428P-RevA1=[ DeviceTermoInfo: fullTypeObj = MES2428P-RevA1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016=[ DeviceTermoInfo: fullTypeObj = SMG1016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, ESR-1500=[ DeviceTermoInfo: fullTypeObj = ESR-1500; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, WOP-2ac-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, LTP4X=[ DeviceTermoInfo: fullTypeObj = LTP4X; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.1.10.10.0, PON[60-70]1.3.6.1.4.1.35265.1.22.1.10.11.0] ]
+, MES1124=[ DeviceTermoInfo: fullTypeObj = MES1124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, TAU16sip=[ DeviceTermoInfo: fullTypeObj = TAU16sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SBC1000=[ DeviceTermoInfo: fullTypeObj = SBC1000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, TAU36revBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU36revBmegaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TAU36sip=[ DeviceTermoInfo: fullTypeObj = TAU36sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, TAU36v30sip=[ DeviceTermoInfo: fullTypeObj = TAU36v30sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, MES2428-RevB=[ DeviceTermoInfo: fullTypeObj = MES2428-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU24megaco=[ DeviceTermoInfo: fullTypeObj = TAU24megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TMG16SIP=[ DeviceTermoInfo: fullTypeObj = TMG16SIP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.47.1.59.1.1, №2[50-60]1.3.6.1.4.1.35265.1.47.1.59.1.2] ]
+, MXA64=[ DeviceTermoInfo: fullTypeObj = MXA64; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.2] ]
+, TopGATE-3xx=[ DeviceTermoInfo: fullTypeObj = TopGATE-3xx; skip = true; sensorsMap = [] ]
+, MES3308F=[ DeviceTermoInfo: fullTypeObj = MES3308F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72revBsip=[ DeviceTermoInfo: fullTypeObj = TAU72revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, MES3348F=[ DeviceTermoInfo: fullTypeObj = MES3348F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, WOP-12ac-LR-RevD-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES3324F=[ DeviceTermoInfo: fullTypeObj = MES3324F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72v40sip=[ DeviceTermoInfo: fullTypeObj = TAU72v40sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, PP4G3X=[ DeviceTermoInfo: fullTypeObj = PP4G3X; skip = false; sensorsMap = [Unit1_SFP[65-80]1.3.6.1.4.1.35265.1.13.30.8.0, Unit1_PROC[50-60]1.3.6.1.4.1.35265.1.13.30.10.0, Unit1_SWITCH[50-60]1.3.6.1.4.1.35265.1.13.30.12.0, Unit2_SFP[65-80]1.3.6.1.4.1.35265.1.13.30.9.0, Unit2_PROC[50-60]1.3.6.1.4.1.35265.1.13.30.11.0, Unit2_SWITCH[50-60]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, MES2124=[ DeviceTermoInfo: fullTypeObj = MES2124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, ESR-10=[ DeviceTermoInfo: fullTypeObj = ESR-10; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0] ]
+, WOP-12ac-LR-RevD=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, WOP-12ac-LR-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, SMG200=[ DeviceTermoInfo: fullTypeObj = SMG200; skip = false; sensorsMap = [CPU [sensor-1][65-80]1.3.6.1.4.1.35265.1.29.35.1.0, CPU [sensor-2][65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MSR=[ DeviceTermoInfo: fullTypeObj = MSR; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac-ER-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU36revBsip=[ DeviceTermoInfo: fullTypeObj = TAU36revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, PORTAL=[ DeviceTermoInfo: fullTypeObj = PORTAL; skip = true; sensorsMap = [] ]
+, MES2208P=[ DeviceTermoInfo: fullTypeObj = MES2208P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, ACS=[ DeviceTermoInfo: fullTypeObj = ACS; skip = true; sensorsMap = [] ]
+, MXL2E=[ DeviceTermoInfo: fullTypeObj = MXL2E; skip = true; sensorsMap = [] ]
+, ESR-3100=[ DeviceTermoInfo: fullTypeObj = ESR-3100; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, LTP16N=[ DeviceTermoInfo: fullTypeObj = LTP16N; skip = false; sensorsMap = [PON SFP #1[60-70]1.3.6.1.4.1.35265.1.209.1.2.16.0, PON SFP #2[60-70]1.3.6.1.4.1.35265.1.209.1.2.17.0, Front SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.18.0, Switch[60-70]1.3.6.1.4.1.35265.1.209.1.2.19.0] ]
+, PLC8=[ DeviceTermoInfo: fullTypeObj = PLC8; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.11.1.1.6, PON[60-70]1.3.6.1.4.1.35265.1.22.11.1.1.7] ]
+, WEP-12ac-RevB=[ DeviceTermoInfo: fullTypeObj = WEP-12ac-RevB; skip = true; sensorsMap = [] ]
+, WEP-12ac-RevC=[ DeviceTermoInfo: fullTypeObj = WEP-12ac-RevC; skip = true; sensorsMap = [] ]
+, WOP-2ac=[ DeviceTermoInfo: fullTypeObj = WOP-2ac; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MSAN=[ DeviceTermoInfo: fullTypeObj = MSAN; skip = false; sensorsMap = [] ]
+, WOP-12ac-LR=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES1024=[ DeviceTermoInfo: fullTypeObj = MES1024; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, MES3324=[ DeviceTermoInfo: fullTypeObj = MES3324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR100=[ DeviceTermoInfo: fullTypeObj = ESR100; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, MD1=[ DeviceTermoInfo: fullTypeObj = MD1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.10.1] ]
+, TAU32Mmegaco=[ DeviceTermoInfo: fullTypeObj = TAU32Mmegaco; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, ME5100=[ DeviceTermoInfo: fullTypeObj = ME5100; skip = false; sensorsMap = [XLP_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.0, XLP_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.1, ARAD_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.2, ARAD_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.3, KBP_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.4, KBP_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.5, FRONTPANEL[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.6] ]
+, TAU36v30megaco=[ DeviceTermoInfo: fullTypeObj = TAU36v30megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, SMG4=[ DeviceTermoInfo: fullTypeObj = SMG4; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, PP4X=[ DeviceTermoInfo: fullTypeObj = PP4X; skip = false; sensorsMap = [SFP [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.8.0, CPU [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.10.0, Switch [unit-1][80-90]1.3.6.1.4.1.35265.1.13.30.12.0, SFP [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.9.0, CPU [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.11.0, Switch [unit-2][80-90]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, TAU36v40megaco=[ DeviceTermoInfo: fullTypeObj = TAU36v40megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, SMG2=[ DeviceTermoInfo: fullTypeObj = SMG2; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU32MrevBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU32MrevBmegaco; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES3108=[ DeviceTermoInfo: fullTypeObj = MES3108; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, LTP8N=[ DeviceTermoInfo: fullTypeObj = LTP8N; skip = false; sensorsMap = [PON SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.16.0, Front SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.18.0, Switch[60-70]1.3.6.1.4.1.35265.1.209.1.2.19.0] ]
+, MES2124F=[ DeviceTermoInfo: fullTypeObj = MES2124F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.9.2] ]
+, ESR1000=[ DeviceTermoInfo: fullTypeObj = ESR1000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES2424P-RevC1=[ DeviceTermoInfo: fullTypeObj = MES2424P-RevC1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WOP-12ac-LR-RevD-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2124P=[ DeviceTermoInfo: fullTypeObj = MES2124P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, TAU16megaco=[ DeviceTermoInfo: fullTypeObj = TAU16megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, WOP-2ac-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2411X=[ DeviceTermoInfo: fullTypeObj = MES2411X; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2424=[ DeviceTermoInfo: fullTypeObj = MES2424; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES3116F=[ DeviceTermoInfo: fullTypeObj = MES3116F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3116=[ DeviceTermoInfo: fullTypeObj = MES3116; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3508P=[ DeviceTermoInfo: fullTypeObj = MES3508P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482] ]
+, SMG2016=[ DeviceTermoInfo: fullTypeObj = SMG2016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU72revDsip=[ DeviceTermoInfo: fullTypeObj = TAU72revDsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, WOP-2ac-RevC=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-RevC; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU36megaco=[ DeviceTermoInfo: fullTypeObj = TAU36megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES2408C=[ DeviceTermoInfo: fullTypeObj = MES2408C; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SBC2000=[ DeviceTermoInfo: fullTypeObj = SBC2000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, MES2324FB=[ DeviceTermoInfo: fullTypeObj = MES2324FB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2408B=[ DeviceTermoInfo: fullTypeObj = MES2408B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016M-R=[ DeviceTermoInfo: fullTypeObj = SMG1016M-R; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac=[ DeviceTermoInfo: fullTypeObj = WOP-12ac; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2424B=[ DeviceTermoInfo: fullTypeObj = MES2424B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2408=[ DeviceTermoInfo: fullTypeObj = MES2408; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2448B=[ DeviceTermoInfo: fullTypeObj = MES2448B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2448E=[ DeviceTermoInfo: fullTypeObj = MES2448E; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG500=[ DeviceTermoInfo: fullTypeObj = SMG500; skip = false; sensorsMap = [CPU [sensor-1][65-80]1.3.6.1.4.1.35265.1.29.35.1.0, CPU [sensor-2][65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2408P=[ DeviceTermoInfo: fullTypeObj = MES2408P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, FXS72SIP=[ DeviceTermoInfo: fullTypeObj = FXS72SIP; skip = false; sensorsMap = [temper[65-80]1.3.6.1.4.1.35265.1.44.5.1.1.5] ]
+, SMG1016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG1016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, SMG1016-R=[ DeviceTermoInfo: fullTypeObj = SMG1016-R; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2448P=[ DeviceTermoInfo: fullTypeObj = MES2448P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WEP-2ac=[ DeviceTermoInfo: fullTypeObj = WEP-2ac; skip = true; sensorsMap = [] ]
+, SMG3016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG3016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU36revDsip=[ DeviceTermoInfo: fullTypeObj = TAU36revDsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, MES2424P=[ DeviceTermoInfo: fullTypeObj = MES2424P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MXA32=[ DeviceTermoInfo: fullTypeObj = MXA32; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.2] ]
+, MES5248=[ DeviceTermoInfo: fullTypeObj = MES5248; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482, №3[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420483, №4[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420484] ]
+, LTE2X=[ DeviceTermoInfo: fullTypeObj = LTE2X; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, WEP-2ac-Smart=[ DeviceTermoInfo: fullTypeObj = WEP-2ac-Smart; skip = true; sensorsMap = [] ]
+, ESR200=[ DeviceTermoInfo: fullTypeObj = ESR200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, MES3348=[ DeviceTermoInfo: fullTypeObj = MES3348; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES3324-RevB=[ DeviceTermoInfo: fullTypeObj = MES3324-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR-1700=[ DeviceTermoInfo: fullTypeObj = ESR-1700; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES3000L=[ DeviceTermoInfo: fullTypeObj = MES3000L; skip = false; sensorsMap = [SFP [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.8.0, CPU [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.10.0, Switch [unit-1][80-90]1.3.6.1.4.1.35265.1.13.30.12.0, SFP [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.9.0, CPU [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.11.0, Switch [unit-2][80-90]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, MES2424-RevB=[ DeviceTermoInfo: fullTypeObj = MES2424-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU72v30megaco=[ DeviceTermoInfo: fullTypeObj = TAU72v30megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, ESR-3200=[ DeviceTermoInfo: fullTypeObj = ESR-3200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, LTP8X=[ DeviceTermoInfo: fullTypeObj = LTP8X; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.1.10.10.0, PON[60-70]1.3.6.1.4.1.35265.1.22.1.10.11.0] ]
+, MES2348B=[ DeviceTermoInfo: fullTypeObj = MES2348B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2324B=[ DeviceTermoInfo: fullTypeObj = MES2324B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72v30sip=[ DeviceTermoInfo: fullTypeObj = TAU72v30sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, LTE8X=[ DeviceTermoInfo: fullTypeObj = LTE8X; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, WEP-2ac-Z=[ DeviceTermoInfo: fullTypeObj = WEP-2ac-Z; skip = true; sensorsMap = [] ]
+, MES2324F=[ DeviceTermoInfo: fullTypeObj = MES2324F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, LTE8ST=[ DeviceTermoInfo: fullTypeObj = LTE8ST; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, MES2308R=[ DeviceTermoInfo: fullTypeObj = MES2308R; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, UEP25=[ DeviceTermoInfo: fullTypeObj = UEP25; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.7.5.10.0] ]
+, MES2308P=[ DeviceTermoInfo: fullTypeObj = MES2308P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, UEP23=[ DeviceTermoInfo: fullTypeObj = UEP23; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.7.5.10.0] ]
+, MES2324P=[ DeviceTermoInfo: fullTypeObj = MES2324P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, WOP-12ac-ER-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES5312=[ DeviceTermoInfo: fullTypeObj = MES5312; skip = false; sensorsMap = [Switch[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421377, SFP[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421378, CPLD[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421379] ]
+, MES2348P=[ DeviceTermoInfo: fullTypeObj = MES2348P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, CiscoWLC=[ DeviceTermoInfo: fullTypeObj = CiscoWLC; skip = true; sensorsMap = [] ]
+, GenericAp=[ DeviceTermoInfo: fullTypeObj = GenericAp; skip = true; sensorsMap = [] ]
+, MES3316F=[ DeviceTermoInfo: fullTypeObj = MES3316F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR-1511=[ DeviceTermoInfo: fullTypeObj = ESR-1511; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES2324=[ DeviceTermoInfo: fullTypeObj = MES2324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2408IP=[ DeviceTermoInfo: fullTypeObj = MES2408IP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MXA24=[ DeviceTermoInfo: fullTypeObj = MXA24; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.6.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.6.4.2.1.3.2] ]
+, MES2308=[ DeviceTermoInfo: fullTypeObj = MES2308; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MYSQL=[ DeviceTermoInfo: fullTypeObj = MYSQL; skip = true; sensorsMap = [] ]
+, MES2428=[ DeviceTermoInfo: fullTypeObj = MES2428; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG3016=[ DeviceTermoInfo: fullTypeObj = SMG3016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2424P-RevB=[ DeviceTermoInfo: fullTypeObj = MES2424P-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU24sip=[ DeviceTermoInfo: fullTypeObj = TAU24sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, DHCP=[ DeviceTermoInfo: fullTypeObj = DHCP; skip = true; sensorsMap = [] ]
+, UEP33=[ DeviceTermoInfo: fullTypeObj = UEP33; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.34.5.7.0, №2[65-80]1.3.6.1.4.1.35265.1.34.5.8.0, №3[65-80]1.3.6.1.4.1.35265.1.34.5.9.0] ]
+, WOP-2ac-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2408PL=[ DeviceTermoInfo: fullTypeObj = MES2408PL; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES7048=[ DeviceTermoInfo: fullTypeObj = MES7048; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.0, Switch[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.1] ]
+, MES5148=[ DeviceTermoInfo: fullTypeObj = MES5148; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482, №3[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420483, №4[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420484] ]
+, UEP41=[ DeviceTermoInfo: fullTypeObj = UEP41; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.57.5.7.0, №2[65-80]1.3.6.1.4.1.35265.1.57.5.8.0] ]
+, SSW=[ DeviceTermoInfo: fullTypeObj = SSW; skip = true; sensorsMap = [] ]
+, TAU36v40sip=[ DeviceTermoInfo: fullTypeObj = TAU36v40sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, TAU72v40megaco=[ DeviceTermoInfo: fullTypeObj = TAU72v40megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TAU16revBsip=[ DeviceTermoInfo: fullTypeObj = TAU16revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SBC3000=[ DeviceTermoInfo: fullTypeObj = SBC3000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, MES3124=[ DeviceTermoInfo: fullTypeObj = MES3124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, TAU72revBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU72revBmegaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+}'
+2023-12-21T16:50:45,394 [main] INFO  DB TreeObjectStorage.loadAllTreeObjParamsList(line:1620). Load next 100000 ELTEX_OBJ_PROP offset 0
+2023-12-21T16:50:45,401 [main] INFO  DB TreeObjectStorage.loadAllTreeObjParamsList(line:1620). Load next 100000 ELTEX_OBJ_PROP offset 1001
+2023-12-21T16:50:45,432 [main] INFO  DB TreeContainer.fillBaseTreeParameters(line:661). Start
+2023-12-21T16:50:45,456 [main] INFO  DB TreeContainer.fillSnmpObjectsParameters(line:706). Start
+2023-12-21T16:50:45,457 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:580). Get all snmp objects without IPs
+2023-12-21T16:50:45,458 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:586). Get all snmp objects with unique IPs
+2023-12-21T16:50:45,459 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:593). Get all snmp objects that is located on localhost
+2023-12-21T16:50:45,533 [main] INFO  Kernel TreeContainer.postUpLoadTreeProcessing(line:629). [TIME_LOAD_DB] load Tree: Created ObjectList from root (all objects), size = 1
+2023-12-21T16:50:45,712 [main] INFO  Kernel WipsWidsLicenceManager.init(line:92). WIPS/WIDS licence group = ; maxSize = 3; currentSize = 0
+2023-12-21T16:50:45,727 [main] INFO  Kernel TreeContainer.checkDevicePingPeriod(line:2256). DevicePingPeriod: recommended period = 30, now = 60
+2023-12-21T16:50:45,731 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler Monitor_$_1 started.
+2023-12-21T16:50:45,799 [main] INFO  Kernel PDUAlertDispatcher.startInit(line:850). [AUTO_TRAP] startInit. Type = AUTO
+2023-12-21T16:50:45,811 [main] INFO  Kernel AvailableDevicePingV2.<init>(line:190). AvailableDevicePingV2:: Create queue. Size = 0
+2023-12-21T16:50:45,816 [main] INFO  tftpserver TFtpServerModule.start(line:62). Start with tftp.port = 69
+2023-12-21T16:50:45,830 [main] INFO  DB ConnectionsDB.checkDbConnSize(line:547). DB max conn. maxConn = 151; EMC max = 166; Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; 
+2023-12-21T16:50:45,832 [main] ERROR Kernel Server.main(line:291). Init EMS server errors: 
+Ошибка БД при загрузке модуля 'acs':
+Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+Инциализация модуля 'acs' остановлена. Модуль будет удалён.
+
+Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; Total = 166
+
+2023-12-21T16:50:46,483 [main] ERROR Kernel Server.main(line:302). -----------V--------------- EMS_SERVER is started -------------V-----------
+2023-12-21T16:50:45,813 [Thread-11] INFO  Snmp AlertGeneralHandler.run(line:80). Alerts listener: poolSize = 6
+2023-12-21T16:50:46,519 [LogsDispatcher] INFO  events LogsDispatcher.handle(line:62). [login: "", user_ip: "", host_ip: "10.0.2.15"][mode: "EMS_SERVER", function: "START", status: "OK"]
+2023-12-21T16:50:46,824 [Timer-7] INFO  Kernel VendorContainer$Refresher.run(line:139). Start
+2023-12-21T16:50:46,909 [main] INFO  Kernel Server.main(line:314). Wait for EMS server port listener down.
+2023-12-21T16:50:47,587 [Monitor_EmsServerDiagnostics-1] INFO  Kernel ObjectHandler.handleCommand(line:215). Error: command = [ Command: action = GET_STATE_LIST; objectType = EMS_SERVER; sessionId = session; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=1, treeObj=null, tabName='null', methodName='null', description='null', object=null, processId='null', logs=null}; commandId = CMD:GET_STATE_LIST_EMS_SERVER_2023-12-21_16:50:46.616; additionalCommands.size = 0 ], Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+2023-12-21T16:50:47,587 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = state
+org.eltex.ems.web.common.exception.EltexException: Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:419) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:483) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.server.SnmpServer.getServerState(SnmpServer.java:83) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:110) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T16:50:47,663 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics SystemReportStorage.saveReport(line:32). MonitorReport [ type = ERROR; name = EmsServerDiagnostics; msg = EMS server diagnostics:
+- get '5' parameters for diagnostics.
+Error on getting 'state': Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+Diagnostics complete:
+- total controlled parameters: 0
+- alerts generated: 0
+- not found: 0 ]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics Monitor.execute(line:369). [EmsServerDiagnostics] Total time spent: 00:01 min:sec, ERROR
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.println(line:375). [Monitor_EmsServerDiagnostics-1] INFO org.quartz.core.JobRunShell - Job group1.EmsServerDiagnostics threw a JobExecutionException: 
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). org.quartz.JobExecutionException: Error: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ] [See nested exception: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ]]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:342)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). Caused by: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:419)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:483)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.server.SnmpServer.getServerState(SnmpServer.java:83)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:110)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315)
+2023-12-21T16:50:47,665 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	... 2 more
+2023-12-21T16:50:47,831 [GuiListener2v] INFO  Kernel Listener.waitEmsStart(line:271). Wait start EMS server: works in 2 sec. result = true
+2023-12-21T16:50:47,920 [Timer-7] INFO  Kernel VendorContainer$Refresher.run(line:141). Complete, 34818 loaded
+2023-12-21T16:51:11,159 [GuiHandler2v_0] INFO  Kernel AuthUserCommander.handle(line:69). login = 'northbound'
+2023-12-21T16:51:11,288 [GuiHandler2v_0] INFO  Kernel UsersContainer.getInstance(line:65). load: usersMapName, size=3; usersMapId, size=3; usersPassMapName = 3;
+2023-12-21T16:51:11,329 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=-1; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=UserAuth ] [ ActionInfo: Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_SYSTEM_2023-12-21_16:51:10.924; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER ] [ TimeDetailInfo (ms): Start=4; SocketRead=200; StartProcess=0; Session=0; AdditionalCommands=0; Command=138; (isInterrupt=false); SocketSend=34; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: AUTH_USER. Additional:  ]
+2023-12-21T16:51:11,551 [GuiHandler2v_1] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T16:51:11,560 [GuiHandler2v_1] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=-1; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_16:51:11.477; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=0; SocketRead=62; StartProcess=0; Session=1; AdditionalCommands=0; Command=9; FillAlerts=1; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T16:51:11,562 [GuiHandler2v_2] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T16:51:11,591 [GuiHandler2v_2] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=-1; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_16:51:11.487; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=6; SocketRead=67; StartProcess=0; Session=0; AdditionalCommands=0; Command=28; FillAlerts=0; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T16:51:11,607 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T16:51:11,609 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=123; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_16:51:11.471; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=2; SocketRead=120; StartProcess=0; Session=0; AdditionalCommands=0; Command=0; FillAlerts=1; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T16:52:28,514 [GuiHandler2v_0] INFO  Kernel AuthUserCommander.handle(line:69). login = 'admin'
+2023-12-21T16:52:28,521 [GuiHandler2v_0] INFO  Kernel AuthCommanderUtils.checkSimpleUser(line:395). [CheckAuth] Check simple user. login = 'admin', fromAddr '192.168.56.1', forbidDoubleLogin 'true'
+2023-12-21T16:52:28,521 [GuiHandler2v_0] INFO  Kernel AuthCommanderUtils.checkSimpleUser(line:408). [CheckAuth] Check simple user. result msg = 'null'
+2023-12-21T16:52:28,521 [GuiHandler2v_0] INFO  Kernel AuthCommanderUtils.checkSimpleUser(line:421). [CheckAuth] Test double login passed for admin
+2023-12-21T16:52:30,528 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=2046; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_admin_SYSTEM_2023-12-21_16:52:27.842; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER ] [ TimeDetailInfo (ms): Start=3; SocketRead=29; StartProcess=0; Session=0; AdditionalCommands=0; Command=23; (isInterrupt=false); SocketSend=1990; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: AUTH_USER. Additional:  ]
+2023-12-21T16:52:30,527 [LogsDispatcher] INFO  events LogsDispatcher.handle(line:62). [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15", role: "SuperUser"][mode: "USER", function: "LOGIN", status: "OK"]
+2023-12-21T16:52:32,538 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=37; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_ACTIVE_GUI_SESSION_LIST; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_ACTIVE_GUI_SESSION_LIST_admin_SYSTEM_2023-12-21_16:52:31.881; Type=SYSTEM |  objId=-1; treeObj=null; method=GET_ACTIVE_GUI_SESSION_LIST ] [ TimeDetailInfo (ms): Start=9; SocketRead=20; StartProcess=0; Session=1; AdditionalCommands=4; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: GET_ACTIVE_GUI_SESSION_LIST. Additional:  ]
+2023-12-21T16:52:32,558 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=11; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_SERVER_DOMAINS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_SERVER_DOMAINS_admin_SYSTEM_2023-12-21_16:52:31.928; Type=SYSTEM |  objId=-1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=1; SocketRead=3; StartProcess=0; Session=1; AdditionalCommands=2; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=3; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_SERVER_DOMAINS. Additional:  ]
+2023-12-21T16:52:32,697 [GuiHandler2v_0] INFO  Kernel TreeFullObjectListCommander.handle(line:42). Java memory info (Mb): Used: 76, Free: 179, Total: 256, Max: 1024
+2023-12-21T16:52:32,708 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=34; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_FULL_TREE; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_FULL_TREE_admin_SYSTEM_2023-12-21_16:52:32.046; Type=SYSTEM |  objId=1; treeObj=null; method=GET_FULL_TREE ] [ TimeDetailInfo (ms): Start=5; SocketRead=5; StartProcess=0; Session=0; AdditionalCommands=0; Command=10; (isInterrupt=false); SocketSend=8; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_FULL_TREE. Additional:  ]
+2023-12-21T16:52:34,089 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=64; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_TITLE_DATA; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_TITLE_DATA_admin_SYSTEM_2023-12-21_16:52:33.386; Type=SYSTEM |  objId=1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=1; SocketRead=22; StartProcess=0; Session=0; AdditionalCommands=0; Command=25; FillAlerts=0; (isInterrupt=false); SocketSend=16; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_TITLE_DATA. Additional:  ]
+2023-12-21T16:52:34,220 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=12; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=UPDATE_SESSION_STATUS_TO_WORK; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:UPDATE_SESSION_STATUS_TO_WORK_admin_SYSTEM_2023-12-21_16:52:33.588; Type=SYSTEM |  objId=-1; treeObj=null; method=UPDATE_SESSION_STATUS_TO_WORK ] [ TimeDetailInfo (ms): Start=1; SocketRead=5; StartProcess=0; Session=0; AdditionalCommands=0; Command=0; FillAlerts=3; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: UPDATE_SESSION_STATUS_TO_WORK. Additional:  ]
+2023-12-21T16:52:34,278 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=56; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=START_GUI_CURRENT_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:START_GUI_CURRENT_ALERTS_admin_SYSTEM_2023-12-21_16:52:33.601; Type=SYSTEM |  objId=1; treeObj=null; method=START_GUI_CURRENT_ALERTS ] [ TimeDetailInfo (ms): Start=0; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=19; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=33; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: START_GUI_CURRENT_ALERTS. Additional:  ]
+2023-12-21T16:52:44,417 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=55; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:52:43.742; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : {  } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=15; StartProcess=0; Session=0; AdditionalCommands=0; Command=25; (isInterrupt=false); SocketSend=13; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:53:33,812 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=22; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_EMS_LOGS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_EMS_LOGS_admin_SYSTEM_2023-12-21_16:53:33.170; Type=SYSTEM |  objId=-1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=1; SocketRead=6; StartProcess=0; Session=0; AdditionalCommands=0; Command=14; FillAlerts=0; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_EMS_LOGS. Additional:  ]
+2023-12-21T16:53:33,841 [AsyncProcess_pool-4-thread-1] INFO  File FileAsyncProcess.checkFiles(line:139). Каталог пуст.
+2023-12-21T16:53:35,142 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=14; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_ASYNC_PROCESS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_ASYNC_PROCESS_admin_SYSTEM_2023-12-21_16:53:34.500; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = -1; limitStart = -1; filters : {  } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=7; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=4; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_ASYNC_PROCESS. Additional:  ]
+2023-12-21T16:53:42,256 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=3; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_ASYNC_TASK_MSG; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_ASYNC_TASK_MSG_admin_SYSTEM_2023-12-21_16:53:41.632; Type=SYSTEM |  objId=1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_ASYNC_TASK_MSG. Additional: GET_ASYNC_MERGE; ]
+2023-12-21T16:54:09,227 [GuiHandler2v_0] INFO  Kernel AuthUserCommander.handle(line:69). login = 'admin'
+2023-12-21T16:54:09,232 [GuiHandler2v_0] INFO  Kernel AuthCommanderUtils.checkSimpleUser(line:395). [CheckAuth] Check simple user. login = 'admin', fromAddr '192.168.56.1', forbidDoubleLogin 'true'
+2023-12-21T16:54:09,233 [GuiHandler2v_0] INFO  Kernel AuthCommanderUtils.checkSimpleUser(line:408). [CheckAuth] Check simple user. result msg = 'Пользователь с именем 'admin' работает на хосте '192.168.56.1'.'
+2023-12-21T16:54:09,233 [GuiHandler2v_0] WARN  Kernel AuthCommanderUtils.checkSimpleUser(line:410). Finish. Found doubled login: 
+2023-12-21T16:54:09,234 [GuiHandler2v_0] INFO  Kernel ObjectHandler.handleCommand(line:215). Error: command = [ Command: action = AUTH_USER; objectType = SYSTEM; sessionId = -1; guiModuleId = null; clientInetAddress = 192.168.56.1; addToResponse = false; needLogs = true; function = Function{mode=USER, type=LOGIN, objId=-1, treeObj=null, tabName='AUTH_USER', methodName='AUTH_USER', description='Авторизация', object=null, processId='null', logs=null}; commandId = CMD:AUTH_USER_admin_SYSTEM_2023-12-21_16:54:08.578; additionalCommands.size = 0 ], Аутентификация не выполнена.
+Пользователь 'admin' уже авторизован в системе.
+2023-12-21T16:54:09,237 [AlertReporter] WARN  Kernel AlertReporter.processAlerts(line:175). [ACTIVE_ALERT] Invalid params on 'Неудачная попытка аутентификации. IP: '192.168.56.1', имя: admin, причина: вход выполнен с другого хоста' id=0; oid=null
+2023-12-21T16:54:09,246 [GuiHandler2v_0] INFO  Kernel SocketHandler.run(line:128). GuiHandler2v_0: Аутентификация не выполнена.
+Пользователь 'admin' уже авторизован в системе.
+2023-12-21T16:54:09,246 [LogsDispatcher] INFO  events LogsDispatcher.handle(line:62). [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15"][mode: "USER", function: "LOGIN", status: "ERROR"]
+2023-12-21T16:54:09,246 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=41; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_admin_SYSTEM_2023-12-21_16:54:08.578; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER ] [ TimeDetailInfo (ms): Start=1; SocketRead=20; StartProcess=0; Session=0; AdditionalCommands=0; (isInterrupt=false); SocketSend=41; ProcessAfter=0 ] [ Error: WrongAuthException - Аутентификация не выполнена.
+Пользователь 'admin' уже авторизован в системе. ] [ AddInfo: AUTH_USER. Additional:  ]
+2023-12-21T16:55:01,660 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T16:55:01,661 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=45; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_16:55:01.615; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=0; SocketRead=44; StartProcess=0; Session=0; AdditionalCommands=0; Command=0; FillAlerts=1; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T16:55:48,316 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:87). Start
+2023-12-21T16:55:48,317 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:109). Complete, 0 loaded
+2023-12-21T16:58:30,749 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=25; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:30.073; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : {  } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=9; (isInterrupt=false); SocketSend=14; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:33,365 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=7; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:32.711; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = INFO] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=2; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:34,945 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=4; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:34.294; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = WARNING] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:35,969 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=4; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:35.317; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = MINOR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:37,117 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=3; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:36.465; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = MAJOR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:38,087 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=9; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:37.427; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = CRITICAL] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=4; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:39,124 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=5; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:38.472; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = CLEAR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:43,243 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=4; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:42.592; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = CLEAR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=0; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:43,790 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=3; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:43.135; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = CLEAR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=2; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:44,888 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=4; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:44.236; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : { [ FieldFilter : dbField = PRIORITY; cmd = EQ; value = CLEAR] } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:58:46,537 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=6; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_LAST_ALERTS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_LAST_ALERTS_admin_SYSTEM_2023-12-21_16:58:45.882; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = 20; limitStart = 0; filters : {  } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=1; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_LAST_ALERTS. Additional:  ]
+2023-12-21T16:59:04,653 [AsyncProcess_pool-4-thread-2] INFO  File FileAsyncProcess.checkFiles(line:139). Удаляются устаревшие файлы:
+Файлы, удовлетворяющие условию удаления, не обнаружены.
+Осталось 1 файлов, общим обьемом 139 Кб.
+2023-12-21T16:59:04,653 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=2; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_EMS_LOGS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_EMS_LOGS_admin_SYSTEM_2023-12-21_16:59:04.014; Type=SYSTEM |  objId=-1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_EMS_LOGS. Additional:  ]
+2023-12-21T16:59:05,711 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=6; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_ASYNC_PROCESS; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_ASYNC_PROCESS_admin_SYSTEM_2023-12-21_16:59:05.032; Type=SYSTEM |  objId=1; treeObj=null; method=null; slotNumber=-1; hasMonitoring=false; xmlFileName=null; container=null; snmpPars=null; filtersManager=[ FieldFilterManager : orderFieldName = ID; orderValue = DESC; limitSize = -1; limitStart = -1; filters : {  } ]; acquireCount=true ] [ TimeDetailInfo (ms): Start=1; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=0; (isInterrupt=false); SocketSend=4; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_ASYNC_PROCESS. Additional:  ]
+2023-12-21T16:59:09,590 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=10; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=GET_ASYNC_TASK_MSG; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:GET_ASYNC_TASK_MSG_admin_SYSTEM_2023-12-21_16:59:08.942; Type=SYSTEM |  objId=2; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=0; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=8; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: GET_ASYNC_TASK_MSG. Additional: GET_ASYNC_MERGE; ]
+2023-12-21T17:00:01,503 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T17:00:01,504 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=6; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_17:00:01.497; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=4; SocketRead=1; StartProcess=0; Session=0; AdditionalCommands=0; Command=0; FillAlerts=0; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T17:05:01,606 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T17:05:01,607 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=4; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_16-51-11.294; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_17:05:01.602; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=0; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=2; FillAlerts=0; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T17:05:48,317 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:87). Start
+2023-12-21T17:05:48,317 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:109). Complete, 0 loaded
+2023-12-21T17:08:53,108 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=35; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=SET_USER_PROFILES; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:SET_USER_PROFILES_admin_SYSTEM_2023-12-21_17:08:52.417; Type=SYSTEM |  objId=-1; treeObj=null; method=null ] [ TimeDetailInfo (ms): Start=2; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=30; FillAlerts=0; (isInterrupt=false); SocketSend=1; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: SET_USER_PROFILES. Additional: GET_ASYNC_MERGE; ]
+2023-12-21T17:08:53,123 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=7; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=CLOSE_GUI; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:CLOSE_GUI_admin_SYSTEM_2023-12-21_17:08:52.461; Type=SYSTEM |  objId=-1; treeObj=null; method=DESTROY_APPLET ] [ TimeDetailInfo (ms): Start=2; SocketRead=2; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; (isInterrupt=false); SocketSend=1; ProcessAfter=1 ] [ Error: NO ] [ AddInfo: CLOSE_GUI. Additional:  ]
+2023-12-21T17:08:53,123 [LogsDispatcher] INFO  events LogsDispatcher.handle(line:62). [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15"][mode: "USER", function: "LOGOUT", status: "OK"]
+2023-12-21T17:08:53,131 [GuiHandler2v_0] INFO  Kernel SocketHandler.run(line:115). NEED_AUTH
+2023-12-21T17:08:53,131 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=5; CloseSocket=0 ] [ UserInfo: user_ip=192.168.56.1; user=admin ] [ ActionInfo: Action=CLOSE_GUI; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:CLOSE_GUI_admin_SYSTEM_2023-12-21_17:08:52.474; Type=SYSTEM |  objId=-1; treeObj=null; method=DESTROY_APPLET ] [ TimeDetailInfo (ms): Start=1; SocketRead=1; StartProcess=0; (isInterrupt=false); SocketSend=5; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: CLOSE_GUI. Additional:  ]
+2023-12-21T17:08:58,212 [Shutdown] ERROR Kernel ServerShutdownHook.run(line:30). ============== Start shutdown. Waiting for real work is finished. ===========
+2023-12-21T17:08:58,213 [Shutdown] INFO  Kernel Server.fillEmsServerInfo(line:1438). --- GUI Listener (GuiListener2v ):
+
+2023-12-21T17:08:58,237 [Shutdown] ERROR Kernel Listener.fillStatisticsInfo(line:298). id                           : -1
+sessionId                    : null
+started                      : false
+errMsg                       : null
+errDate                      : null
+Примечание                   : user_ip=192.168.56.1; user=admin; Action=CLOSE_GUI; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:CLOSE_GUI_admin_SYSTEM_2023-12-21_17:08:52.461; Type=SYSTEM |  objId=-1; treeObj=null; method=DESTROY_APPLET
+Текущее состояние            : Свободен
+Дата создания                : Thu Dec 21 16:51:10 MSK 2023
+Кол-во обращений             : 131
+Общее время (dd:hh:mm:ss.ms) : 00:00:17:47.285 (1067285)
+В работе (dd:hh:mm:ss.ms)    : 00:00:00:03.593 (3593)
+Мин, мсек                    : 2
+Среднее, мсек                : 27
+Макс, мсек                   : 2046
+Акция (для макс)             : user_ip=192.168.56.1; user=admin; Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_admin_SYSTEM_2023-12-21_16:52:27.842; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER
+currentAction                : 
+startAction                  : 
+2023-12-21T17:09:34,276 [main] ERROR Kernel Server.main(line:230). 
+
+-------------------------------------- START EMS_SERVER --------------------------------------------
+2023-12-21T17:09:34,312 [main] ERROR Kernel Server.main(line:234). EMS version (from server.jar manifest) : 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T17:09:34,313 [main] ERROR Kernel Server$1.println(line:375). ----- test ERR ------- 
+2023-12-21T17:09:34,338 [main] INFO  Kernel ServerShutdownHook.<init>(line:22). Set Shutdown
+2023-12-21T17:09:34,338 [main] INFO  Kernel ServerBuilder.createServerShutdownHook(line:55). init: Add ShutdownHook.
+2023-12-21T17:09:34,392 [main] ERROR Kernel Server.init(line:403). init: Server version = 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T17:09:34,392 [main] ERROR Kernel Server.init(line:405). JAVA version = 1.8.0_362
+2023-12-21T17:09:34,601 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/config.txt
+2023-12-21T17:09:34,635 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/system-config.txt
+2023-12-21T17:09:34,637 [main] INFO  Kernel ConfigManager.<init>(line:58). Loading params from file: /usr/lib/eltex-ems/conf/snmp/OntActivationSender.cfg
+2023-12-21T17:09:34,653 [main] INFO  Kernel Server.init(line:422). init: ACCESS_TYPE from system-config.txt = BY_DOMAIN
+2023-12-21T17:09:34,879 [main] INFO  Kernel ServerModule.initDBPools(line:126). Initialize pools for module 'system'. pools: [tree, event, ont, syslog]
+2023-12-21T17:09:34,902 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_ems?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&noAccessToProcedureBodies=true&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='tree', maxPoolSize=20, inUse=true, sshPort=0}
+2023-12-21T17:09:35,203 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool tree
+2023-12-21T17:09:35,697 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Starting...
+2023-12-21T17:09:35,737 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,605 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Start completed.
+2023-12-21T17:09:37,605 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_alert?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='event', maxPoolSize=32, inUse=true, sshPort=0}
+2023-12-21T17:09:37,605 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool event
+2023-12-21T17:09:37,621 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Starting...
+2023-12-21T17:09:37,621 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,678 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Start completed.
+2023-12-21T17:09:37,678 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/eltex_ont?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='ont', maxPoolSize=40, inUse=true, sshPort=0}
+2023-12-21T17:09:37,678 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool ont
+2023-12-21T17:09:37,679 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Starting...
+2023-12-21T17:09:37,679 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,757 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Start completed.
+2023-12-21T17:09:37,757 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/Syslog?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='syslog', maxPoolSize=4, inUse=true, sshPort=0}
+2023-12-21T17:09:37,757 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool syslog
+2023-12-21T17:09:37,760 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Starting...
+2023-12-21T17:09:37,761 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,795 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Start completed.
+2023-12-21T17:09:38,081 [main] INFO  Kernel ServerBuilder.loadCurrentLang(line:110). configuredLocale from DB = ru_RU
+2023-12-21T17:09:38,081 [main] INFO  Kernel Server.init(line:461). currentLang = ru_RU
+2023-12-21T17:09:40,875 [main] INFO  Kernel ServerBuilder.createAllModules(line:362). Create modules: remove disable modules = [
+[ ServerModule :
+ actionFile		= null
+ elementsFile		= null
+ sqlInstallFile		= null
+ sqlUninstallFile		= null
+ monitorsFile		= null
+ depends		= []
+ config		= params = {sorm2.url=http://localhost:7071, sorm2.read.write.timeout.s=11, sorm2.connect.timeout.s=11, sorm2.enabled=false}
+ licenceList		= []
+ dbPools		= []
+[ Module :
+ name		= sorm2
+ config		= params = {sorm2.url=http://localhost:7071, sorm2.read.write.timeout.s=11, sorm2.connect.timeout.s=11, sorm2.enabled=false}
+ title		= SORM2
+ descr		= Eltex.SORM2.replicator
+ maxDevice		= -1
+ deviceType		= SORM2
+ enable		= false
+ guiClass		= null
+]
+]]
+2023-12-21T17:09:43,356 [main] INFO  Kernel SnmpEngine.<init>(line:123). SNMP-transport successfully created.
+2023-12-21T17:09:46,961 [main] INFO  Kernel ServerBuilder.checkModuleLic(line:631). ModuleLic delList : [Multi-Vendor, Cluster]
+2023-12-21T17:09:46,988 [main] INFO  acs ServerModule.initDBPools(line:126). Initialize pools for module 'acs'. pools: [cache, inf, cmds, cpe]
+2023-12-21T17:09:46,988 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/acscache?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='cache', maxPoolSize=2, inUse=true, sshPort=0}
+2023-12-21T17:09:46,988 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool cache
+2023-12-21T17:09:46,988 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - cache - Starting...
+2023-12-21T17:09:46,988 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,107 [main] ERROR Kernel Server$1.println(line:375). [main] ERROR com.zaxxer.hikari.pool.HikariPool - cache - Exception during pool initialization.
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+2023-12-21T17:09:48,302 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.HikariConnectionPool.<init>(HikariConnectionPool.java:49)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.createPool(MultiConnectionPool.java:73)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.addPools(MultiConnectionPool.java:61)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.ConnectionsDB.init(ConnectionsDB.java:233)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.module.ServerModule.initDBPools(ServerModule.java:127)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.ServerBuilder.checkModules(ServerBuilder.java:465)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.init(Server.java:502)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.main(Server.java:252)
+2023-12-21T17:09:48,342 [main] ERROR Kernel ServerBuilder.checkModules(line:470). Disable module 'acs'; checkDb error : Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T17:09:48,362 [main] INFO  radius ServerModule.initDBPools(line:126). Initialize pools for module 'radius'. pools: [radius]
+2023-12-21T17:09:48,362 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/radius?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='radius', maxPoolSize=40, inUse=true, sshPort=0}
+2023-12-21T17:09:48,363 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool radius
+2023-12-21T17:09:48,363 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Starting...
+2023-12-21T17:09:48,363 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,442 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Start completed.
+2023-12-21T17:09:48,523 [main] INFO  wirelessCommon ServerModule.initDBPools(line:126). Initialize pools for module 'wirelessCommon'. pools: [wireless]
+2023-12-21T17:09:48,523 [main] INFO  Kernel AConnectionPool.<init>(line:23). Start. dbPar = DBPar{dbURL='jdbc:mysql://localhost/wireless?useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&connectTimeout=5000&useSSL=false', user='javauser', password='***', driverClassName='org.gjt.mm.mysql.Driver', poolName='wireless', maxPoolSize=30, inUse=true, sshPort=0}
+2023-12-21T17:09:48,523 [main] INFO  Kernel AConnectionPool.<init>(line:40). Created Connection pool wireless
+2023-12-21T17:09:48,524 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Starting...
+2023-12-21T17:09:48,524 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,570 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Start completed.
+2023-12-21T17:09:48,648 [main] INFO  Kernel ServerBuilder.checkModules(line:487). Create modules: remove modules with wrong DB (module.checkDb) = [
+[ ServerModule :
+ actionFile		= conf/module/acs/acs_action.xml
+ elementsFile		= conf/module/acs/acs_elements.xml
+ sqlInstallFile		= null
+ sqlUninstallFile		= null
+ monitorsFile		= conf/module/acs/acs_monitors.xml
+ depends		= [linuxServerCommon]
+ config		= 
+[ AcsConfig :
+	- cpeLastContactGreenTime = 7200
+	- cpeLastContactRedTime = 86400
+	- acsdLocale = true
+	- localeDir = /var/acsd
+	- remoteHost = 192.168.26.84
+	- remoteDir = /acs_root
+	- remoteLogin = acs
+	- cpeSelectedMax = 6
+	- isUseRepairTable = true
+	- useSerialAsHex = false
+	- useBusyMode = false
+	- busyTimeoutMaxMsec = 50000
+	- busyStepMsec = 500
+	- all params = params = {gui.cpe.contact.red_time=86400, use_serial_in_hex=false, db.use.auto.repair=true, busy.step.msec=500, acsd.locale.file_dir=/var/acsd, cpe.selected.max.size=6, gui.cpe.contact.green_time=7200, group.direct.timeout.sec=3600, busy.use.mode=false, busy.timeout.max.msec=50000, acsd.if.version=1.6.1}
+]
+ licenceList		= [ACS]
+ dbPools		= [cache, inf, cmds, cpe]
+[ Module :
+ name		= acs
+ config		= 
+[ AcsConfig :
+	- cpeLastContactGreenTime = 7200
+	- cpeLastContactRedTime = 86400
+	- acsdLocale = true
+	- localeDir = /var/acsd
+	- remoteHost = 192.168.26.84
+	- remoteDir = /acs_root
+	- remoteLogin = acs
+	- cpeSelectedMax = 6
+	- isUseRepairTable = true
+	- useSerialAsHex = false
+	- useBusyMode = false
+	- busyTimeoutMaxMsec = 50000
+	- busyStepMsec = 500
+	- all params = params = {gui.cpe.contact.red_time=86400, use_serial_in_hex=false, db.use.auto.repair=true, busy.step.msec=500, acsd.locale.file_dir=/var/acsd, cpe.selected.max.size=6, gui.cpe.contact.green_time=7200, group.direct.timeout.sec=3600, busy.use.mode=false, busy.timeout.max.msec=50000, acsd.if.version=1.6.1}
+]
+ title		= ACS
+ descr		= Eltex.ACS
+ maxDevice		= -1
+ deviceType		= ACS
+ enable		= false
+ guiClass		= org.eltex.ems.web.gui.module.acs.AcsGuiModule
+]
+]]
+2023-12-21T17:09:48,723 [main] ERROR Kernel ServerModule.initDb(line:197). Module gePon start config: {min_nterg14_version=-1.0.0, tftp_host_no_vlan=10.0.2.15, nterg14_image=, max_update=5, nterg14_revb_image=, min_nterg24_version=-1.0.0, max_error=5}
+2023-12-21T17:09:48,836 [main] ERROR Kernel ServerModule.initDb(line:197). Module apb start config: {}
+2023-12-21T17:09:48,837 [main] ERROR Kernel ServerModule.initDb(line:197). Module pcrf start config: {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T17:09:48,866 [main] ERROR Kernel ServerModule.initDb(line:197). Module voipCommon start config: {auto.change.ports.by.traps=false}
+2023-12-21T17:09:48,867 [main] ERROR Kernel ServerModule.initDb(line:197). Module gPon start config: {gpon.version_and_eq_req=true, gpon.rssi_req=true, gpon.ont.tftp.host=10.0.2.15, gui.use_gpon_serial_in_hex=false}
+2023-12-21T17:09:48,916 [main] ERROR Kernel ServerModule.initDb(line:197). Module netconf start config: {netconf.mongodb.url=mongodb://localhost:27017/netconf, netconf.module.enable=false}
+2023-12-21T17:09:48,931 [main] ERROR Kernel ServerModule.initDb(line:197). Module radius start config: {radius.restart.enabled=true, radius.restart.timeout=45, radius.service.name=eltex-radius, ems.host.ip.to.radius=127.0.0.1, radius.localhost.secret=eltex, radius.restart.min_interval=60}
+2023-12-21T17:09:48,934 [main] ERROR Kernel ServerModule.initDb(line:197). Module msan start config: {fxs.autoreload.time.s=0}
+2023-12-21T17:09:48,944 [main] ERROR Kernel ServerModule.initDb(line:197). Module airtune start config: {airtune.api.timeout=5, airtune.api.port=8089, airtune.api.conn_timeout=300, airtune.api.host=10.0.2.15, airtune.api.protocol=http}
+2023-12-21T17:09:49,854 [main] ERROR Kernel ServerModule.initDb(line:197). Module ltp start config: {ltp_n.autocommit=false}
+2023-12-21T17:09:49,905 [main] ERROR Kernel ServerModule.initDb(line:197). Module ftpserver start config: {tftp.boot=/tftpboot, ftp.config.dir=ems, ftp.addr=10.0.2.15, ftp.station.images=station_images, ftp.boot.images=uboot_images, ftp.login=ftp, ftp.password=ftp, ftp.port=21}
+2023-12-21T17:09:49,914 [main] ERROR Kernel ServerModule.initDb(line:197). Module softwlc.nbi start config: {nbi.connection.timeout.sec=30, nbi.url=http://localhost:8080/axis2/services/RadiusNbiService?wsdl, nbi.enabled=true, nbi.password=softwlc, nbi.username=softwlc_service, nbi.request.timeout.sec=120}
+2023-12-21T17:09:49,914 [main] INFO  NBI NbiServerModule.updateParams(line:59). Set new NBI state REINIT, previous NONE
+2023-12-21T17:09:50,016 [main] ERROR Kernel ServerModule.initDb(line:197). Module system start config: {gui.settings.separator.trap=, snmp.timeout.prevention=true, alert.mail.port=25, tree.object.attention.alert.priority=CRITICAL, conf.after.add.or.connect.ok=false, snmp.sender.ssl_protocol=TLSv1.2, snmp.sender.inform_timeout=1000, snmp.allow=true, save.filter.value=true, db.tmp.files.dir=/tmp, disable.ap.reset=false, current.locale=ru_RU, alert.syslog.copy=false, snmp.sender.inform_retries=2, monitoring.use=false, tomcat.url=http://10.0.2.15:8080, trap.handler.max_queue=20, snmp.sender.priority.list=CRITICAL, MAJOR, trap.handler.type=AUTO, ping.handler_not_find=CRITICAL, alert.mail.encryption=NONE, use.initialization.link.params=false, tmp.dir=/tmp/ems, kladr.token=, snmp.sender.manager_port=162, table.rowcount=true, ip.adress=10.0.2.15, geocoder.key=, alert.subject=Eltex.EMS, check_hostname=false, support.email.address=, snmp.sender.enable=false, alert.password=password, alert.login=login, trap.handler.max_ip=5, async.process.pool.size=60, user_access_type=BY_DOMAIN, mode.choiceactivealerts=false, snmp.sender.community=public, snmp.sender.separator=, gui.frame.title=Eltex.EMS, alert.set.finish.date.auto=false, snmp.sender.coldstart_enable=true, snmp.sender.enterprise=1.3.6.1.4.1.35265.2.1, snmp.sender.notif_type=1.3.6.1.4.1.35265.3.102, monitor.log.level=ERROR, alert.from=login@mail.server, use.geocoder=GOOGLE, tomcat.urlembeded=http://10.0.2.15:8080, alert.body=Message from '%s', date '%s', type '%s'., alert.separator=, created.session.ping.timeout=121, gui.settings.separator=, http.timeout=300, sync.after.add.or.connect.ok=true, keep.processes.time=24, timeout.connect.lost=120, icmp.allow=true, shared.files.dir=/var/ems-data, snmp.trap.queue.size=20000, log.server.commands=, gui.hide_help_buttons=false, snmp.sender.version=trapv2, mandatory.initialization.link.params=false, snmp.min_timeout.msec=300, alert.enable=false, ip.pingbuffer.pool.size=10, trap.forbid=false, snmp.sender.transliterate=true, alert.mailserver=mail.server, acs.gui.mode=false, ip.pingbuffer.period=60, user.trap=false, ip.pingbuffer.clear.timeout=7200, snmp.sender.manager_ip=192.168.1.1, ip.pingbuffer.flags=-r3 -i 5 -p 500, mode.autoselect=false, ip.pingbuffer.devlimit=1000}
+2023-12-21T17:09:50,057 [main] ERROR Kernel ServerModule.initDb(line:197). Module passwordGenerator start config: {paul.port=8098, paul.connection_timeout=300, paul.host=127.0.0.1, paul.timeout=5}
+2023-12-21T17:09:50,079 [main] ERROR Kernel ServerModule.initDb(line:197). Module wirelessCommon start config: {wificab.url=http://localhost:8080/wifi-cab/, memory.time.sec=604800, copy.ems.name.to.hostname=false, auto.start.initialization=true, pwd.notifier.separator=, allow.collect.total_users=false, pwd.notifier.enabled=false, jerry.service.url=localhost:50051, allow.radius.setting=false, init.link.key.types=69, pwd.notifier.recipients=, wificab.disable_certificate_check=false, need.environment.params=true, wids.service.url=http://localhost:9095, allow.set.ssid.to.wds=false, dyn.tunnel.scheduler.delay.time.seconds=60, wificab.secret=c8b764b4f2befbcd9bd9da81552f555a, wificab.timeout=60, wificab.enabled=true, wids.separator=, disable.ofter.ssid=true, need.params.in.radius.accounting=false, jerry.enabled=true, jerry.separator=, wificab.separator=, dhcp.static.hosts=/etc/dhcp/static/hosts.conf, init.fail.delete=true, alert.associate_client.send_step=3, allow.collect.uplink_load=false}
+2023-12-21T17:09:50,079 [main] INFO  Kernel WirelessCommonServerModule.deleteTotalUsersStatistics(line:355). [ACTIVE_USERS] deleteTotalUsersStatistics - Not implemented!!!
+2023-12-21T17:09:50,104 [main] INFO  Kernel InitRulesStorage.getInitRules(line:557). GET_ApInitParam: pageStart = 0; pageSize = 2147483647
+2023-12-21T17:09:50,121 [main] INFO  Kernel InitRulesStorage.getInitRules(line:606). GET_ApInitParam: INIT_RULES rules.size = 0
+2023-12-21T17:09:50,135 [main] ERROR Kernel ServerModule.initDb(line:197). Module tl1 start config: {process.profile.by.text=true, telnet.port=9340, tid.mode=NAME, telnet.handler.pool.size=5, retries.count=1, synchronize.pon.automatically=true, max.command.time=180, telnet.use=false, telnet.connection.timeout.sec=0, filter.global.enabled=false, commander.pool.size=12}
+2023-12-21T17:09:50,146 [main] ERROR Kernel ServerModule.initDb(line:197). Module tftpserver start config: {tftp.boot.images=uboot_images, tftp.station.images=station_images, tftp.boot=/tftpboot, tftp.addr=10.0.2.15, tftp.config.dir=ems, tftp.port=69}
+2023-12-21T17:09:50,152 [main] ERROR Kernel ServerModule.initDb(line:197). Module ponCommon start config: {ont.min.count=5, ont.changes.server.handle=true, sync.interactive.mode.needSync=true, ont.changes.publish.data=true}
+2023-12-21T17:09:50,155 [main] ERROR Kernel ServerModule.initDb(line:197). Module ma4000 start config: {autocommit=true, maxSlotSize=16}
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:90). nteRgTftpSubdir = nte_images
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:92). nteRg14Image = 
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:93). nteRg14revbImage = 
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:95). host0 = 10.0.2.15
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:105). GePonServerModule init2 nteDir = nte_images
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:131). minNteRg14Version = -1.0.0
+2023-12-21T17:09:50,355 [main] ERROR gepon GePonServerModule.init2(line:146). FW file for updating NTE-RG:revB not assigned. Auto-update of FW NTE-RG14xx:rev.B is impossible!
+2023-12-21T17:09:50,355 [main] INFO  gepon GePonServerModule.init2(line:153). minNteRg24Version = -1.0.0
+2023-12-21T17:09:50,532 [main] ERROR Kernel ServerBuilder.checkModulesWithLicence(line:980). Devices for delete from Licence : {ACS=[ HonestGroup: title=ACS server; countLic=1; hasLic=0; typeList=[ACS] ], MES5448=[ HonestGroup: title=MES 5448; countLic=3; hasLic=0; typeList=[MES5448] ], WiFi=; maxSize = 3; currentSize = 0}
+2023-12-21T17:09:50,556 [main] INFO  Kernel Server.init(line:508). [MODULES] total modules: size = 44; names = GenericAp airtune apb dhcp esr ftpserver gPon gePon linuxServerCommon lte ltp ma4000 md me mes mes3000L monitoring msan msr mxa mxl2e mysql netconf passwordGenerator pcrf plc8 ponCommon portal radius sbc smg softwlc.nbi ssw system tau tftpserver tl1 topgate uep voipCommon wb wep wirelessCommon wop 
+2023-12-21T17:09:52,198 [main] INFO  Kernel Server.init(line:515). [MSG] AllInfo = -------- MSG --------
+MSG_info (2 lang) :  ru_RU/25648 en_US/25639; current = ru_RU; default = en_US
+ru_RU (current), en_US (default)
+1) lang: ru_RU size:25648
+2) lang: en_US size:25639
+
+2023-12-21T17:09:52,203 [main] INFO  Kernel Server.init(line:524). init: ACCESS_TYPE release = BY_DOMAIN
+2023-12-21T17:09:52,569 [main] INFO  Kernel Server.init(line:545). init: CashCheckers = {ASSOCIATE_CLIENTS=[ AssociateClientsChecker : sendStepSec = 3; mapsSize =  0 ]}
+2023-12-21T17:09:52,571 [main] INFO  Kernel Listener.init(line:69). Create PLAIN server socket. (GuiListener2v:9310)
+2023-12-21T17:09:55,323 [main] INFO  Kernel InitRulesStorage.getInitRules(line:557). GET_ApInitParam: pageStart = 0; pageSize = 2147483647
+2023-12-21T17:09:55,359 [main] INFO  Kernel InitRulesStorage.getInitRules(line:606). GET_ApInitParam: INIT_RULES rules.size = 0
+2023-12-21T17:09:55,916 [main] ERROR Acs AcsCommander.initAcsConfig(line:38). Отсутствует модуль 'acs'
+2023-12-21T17:09:56,146 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2023-12-21T17:09:56,148 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2023-12-21T17:09:56,194 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-12-21T17:09:56,194 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v.1.8.6 created.
+2023-12-21T17:09:56,195 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.eltex.ems.web.server.db.monitor.EltexRamJobStore - RAMJobStore initialized.
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v1.8.6) 'Monitor' with instanceId '1'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.eltex.ems.web.server.db.monitor.EltexRamJobStore' - which does not support persistence. and is not clustered.
+
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'Monitor' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 1.8.6
+2023-12-21T17:09:57,169 [main] INFO  Kernel EltexTrapSender.tryInitTransport(line:572). EltexTrapSender transport was initialized/reinitialized
+2023-12-21T17:09:57,345 [main] INFO  Kernel StockOLTTermoQueue.loadTermoDevTypes(line:166). --- initExternalXml parse FILE result : xml = 'conf/termoMonitor.xml'; DevTypes = '{TAU72megaco=[ DeviceTermoInfo: fullTypeObj = TAU72megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MA4000=[ DeviceTermoInfo: fullTypeObj = MA4000; skip = false; sensorsMap = [] ]
+, SMG2016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG2016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2408CP=[ DeviceTermoInfo: fullTypeObj = MES2408CP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WEP-12ac=[ DeviceTermoInfo: fullTypeObj = WEP-12ac; skip = true; sensorsMap = [] ]
+, MES2424FB=[ DeviceTermoInfo: fullTypeObj = MES2424FB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016M=[ DeviceTermoInfo: fullTypeObj = SMG1016M; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac-RevC=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-RevC; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, ESR1200=[ DeviceTermoInfo: fullTypeObj = ESR1200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, WOP-12ac-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU72sip=[ DeviceTermoInfo: fullTypeObj = TAU72sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES3108F=[ DeviceTermoInfo: fullTypeObj = MES3108F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3124F=[ DeviceTermoInfo: fullTypeObj = MES3124F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES2428B=[ DeviceTermoInfo: fullTypeObj = MES2428B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TopGATE-6xx=[ DeviceTermoInfo: fullTypeObj = TopGATE-6xx; skip = true; sensorsMap = [] ]
+, WOP-12ac-ER=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, ESR-12V=[ DeviceTermoInfo: fullTypeObj = ESR-12V; skip = false; sensorsMap = [Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, NODE=[ DeviceTermoInfo: fullTypeObj = NODE; skip = true; sensorsMap = [] ]
+, TAU24revBsip=[ DeviceTermoInfo: fullTypeObj = TAU24revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES2448=[ DeviceTermoInfo: fullTypeObj = MES2448; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2326=[ DeviceTermoInfo: fullTypeObj = MES2326; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU32Msip=[ DeviceTermoInfo: fullTypeObj = TAU32Msip; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SMG1016M-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG1016M-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2428P=[ DeviceTermoInfo: fullTypeObj = MES2428P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, EMS_SERVER=[ DeviceTermoInfo: fullTypeObj = EMS_SERVER; skip = true; sensorsMap = [] ]
+, ESR-20=[ DeviceTermoInfo: fullTypeObj = ESR-20; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0] ]
+, MES2428T=[ DeviceTermoInfo: fullTypeObj = MES2428T; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, RADIUS=[ DeviceTermoInfo: fullTypeObj = RADIUS; skip = true; sensorsMap = [] ]
+, MES5324=[ DeviceTermoInfo: fullTypeObj = MES5324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU32MrevBsip=[ DeviceTermoInfo: fullTypeObj = TAU32MrevBsip; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES5448=[ DeviceTermoInfo: fullTypeObj = MES5448; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.0, Switch[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.1, FPGA[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.2, LPHY[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.3, RPHY[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.4] ]
+, MES2428P-RevA1=[ DeviceTermoInfo: fullTypeObj = MES2428P-RevA1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016=[ DeviceTermoInfo: fullTypeObj = SMG1016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, ESR-1500=[ DeviceTermoInfo: fullTypeObj = ESR-1500; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, WOP-2ac-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, LTP4X=[ DeviceTermoInfo: fullTypeObj = LTP4X; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.1.10.10.0, PON[60-70]1.3.6.1.4.1.35265.1.22.1.10.11.0] ]
+, MES1124=[ DeviceTermoInfo: fullTypeObj = MES1124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, TAU16sip=[ DeviceTermoInfo: fullTypeObj = TAU16sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SBC1000=[ DeviceTermoInfo: fullTypeObj = SBC1000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, TAU36revBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU36revBmegaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TAU36sip=[ DeviceTermoInfo: fullTypeObj = TAU36sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, TAU36v30sip=[ DeviceTermoInfo: fullTypeObj = TAU36v30sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, MES2428-RevB=[ DeviceTermoInfo: fullTypeObj = MES2428-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU24megaco=[ DeviceTermoInfo: fullTypeObj = TAU24megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TMG16SIP=[ DeviceTermoInfo: fullTypeObj = TMG16SIP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.47.1.59.1.1, №2[50-60]1.3.6.1.4.1.35265.1.47.1.59.1.2] ]
+, MXA64=[ DeviceTermoInfo: fullTypeObj = MXA64; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.2] ]
+, TopGATE-3xx=[ DeviceTermoInfo: fullTypeObj = TopGATE-3xx; skip = true; sensorsMap = [] ]
+, MES3308F=[ DeviceTermoInfo: fullTypeObj = MES3308F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72revBsip=[ DeviceTermoInfo: fullTypeObj = TAU72revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, MES3348F=[ DeviceTermoInfo: fullTypeObj = MES3348F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, WOP-12ac-LR-RevD-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES3324F=[ DeviceTermoInfo: fullTypeObj = MES3324F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72v40sip=[ DeviceTermoInfo: fullTypeObj = TAU72v40sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, PP4G3X=[ DeviceTermoInfo: fullTypeObj = PP4G3X; skip = false; sensorsMap = [Unit1_SFP[65-80]1.3.6.1.4.1.35265.1.13.30.8.0, Unit1_PROC[50-60]1.3.6.1.4.1.35265.1.13.30.10.0, Unit1_SWITCH[50-60]1.3.6.1.4.1.35265.1.13.30.12.0, Unit2_SFP[65-80]1.3.6.1.4.1.35265.1.13.30.9.0, Unit2_PROC[50-60]1.3.6.1.4.1.35265.1.13.30.11.0, Unit2_SWITCH[50-60]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, MES2124=[ DeviceTermoInfo: fullTypeObj = MES2124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, ESR-10=[ DeviceTermoInfo: fullTypeObj = ESR-10; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0] ]
+, WOP-12ac-LR-RevD=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, WOP-12ac-LR-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, SMG200=[ DeviceTermoInfo: fullTypeObj = SMG200; skip = false; sensorsMap = [CPU [sensor-1][65-80]1.3.6.1.4.1.35265.1.29.35.1.0, CPU [sensor-2][65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MSR=[ DeviceTermoInfo: fullTypeObj = MSR; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac-ER-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU36revBsip=[ DeviceTermoInfo: fullTypeObj = TAU36revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, PORTAL=[ DeviceTermoInfo: fullTypeObj = PORTAL; skip = true; sensorsMap = [] ]
+, MES2208P=[ DeviceTermoInfo: fullTypeObj = MES2208P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, ACS=[ DeviceTermoInfo: fullTypeObj = ACS; skip = true; sensorsMap = [] ]
+, MXL2E=[ DeviceTermoInfo: fullTypeObj = MXL2E; skip = true; sensorsMap = [] ]
+, ESR-3100=[ DeviceTermoInfo: fullTypeObj = ESR-3100; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, LTP16N=[ DeviceTermoInfo: fullTypeObj = LTP16N; skip = false; sensorsMap = [PON SFP #1[60-70]1.3.6.1.4.1.35265.1.209.1.2.16.0, PON SFP #2[60-70]1.3.6.1.4.1.35265.1.209.1.2.17.0, Front SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.18.0, Switch[60-70]1.3.6.1.4.1.35265.1.209.1.2.19.0] ]
+, PLC8=[ DeviceTermoInfo: fullTypeObj = PLC8; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.11.1.1.6, PON[60-70]1.3.6.1.4.1.35265.1.22.11.1.1.7] ]
+, WEP-12ac-RevB=[ DeviceTermoInfo: fullTypeObj = WEP-12ac-RevB; skip = true; sensorsMap = [] ]
+, WEP-12ac-RevC=[ DeviceTermoInfo: fullTypeObj = WEP-12ac-RevC; skip = true; sensorsMap = [] ]
+, WOP-2ac=[ DeviceTermoInfo: fullTypeObj = WOP-2ac; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MSAN=[ DeviceTermoInfo: fullTypeObj = MSAN; skip = false; sensorsMap = [] ]
+, WOP-12ac-LR=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES1024=[ DeviceTermoInfo: fullTypeObj = MES1024; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, MES3324=[ DeviceTermoInfo: fullTypeObj = MES3324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR100=[ DeviceTermoInfo: fullTypeObj = ESR100; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, MD1=[ DeviceTermoInfo: fullTypeObj = MD1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.10.1] ]
+, TAU32Mmegaco=[ DeviceTermoInfo: fullTypeObj = TAU32Mmegaco; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, ME5100=[ DeviceTermoInfo: fullTypeObj = ME5100; skip = false; sensorsMap = [XLP_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.0, XLP_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.1, ARAD_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.2, ARAD_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.3, KBP_INT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.4, KBP_EXT[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.5, FRONTPANEL[65-80]1.3.6.1.4.1.35265.1.146.1.4.1.1.5.6] ]
+, TAU36v30megaco=[ DeviceTermoInfo: fullTypeObj = TAU36v30megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, SMG4=[ DeviceTermoInfo: fullTypeObj = SMG4; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, PP4X=[ DeviceTermoInfo: fullTypeObj = PP4X; skip = false; sensorsMap = [SFP [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.8.0, CPU [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.10.0, Switch [unit-1][80-90]1.3.6.1.4.1.35265.1.13.30.12.0, SFP [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.9.0, CPU [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.11.0, Switch [unit-2][80-90]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, TAU36v40megaco=[ DeviceTermoInfo: fullTypeObj = TAU36v40megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, SMG2=[ DeviceTermoInfo: fullTypeObj = SMG2; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU32MrevBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU32MrevBmegaco; skip = false; sensorsMap = [SUBMODULE1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, SUBMODULE2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, SUBMODULE3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, SUBMODULE4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES3108=[ DeviceTermoInfo: fullTypeObj = MES3108; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, LTP8N=[ DeviceTermoInfo: fullTypeObj = LTP8N; skip = false; sensorsMap = [PON SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.16.0, Front SFP[60-70]1.3.6.1.4.1.35265.1.209.1.2.18.0, Switch[60-70]1.3.6.1.4.1.35265.1.209.1.2.19.0] ]
+, MES2124F=[ DeviceTermoInfo: fullTypeObj = MES2124F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.9.2] ]
+, ESR1000=[ DeviceTermoInfo: fullTypeObj = ESR1000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES2424P-RevC1=[ DeviceTermoInfo: fullTypeObj = MES2424P-RevC1; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WOP-12ac-LR-RevD-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-LR-RevD-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2124P=[ DeviceTermoInfo: fullTypeObj = MES2124P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1] ]
+, TAU16megaco=[ DeviceTermoInfo: fullTypeObj = TAU16megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, WOP-2ac-RevB=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-RevB; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2411X=[ DeviceTermoInfo: fullTypeObj = MES2411X; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2424=[ DeviceTermoInfo: fullTypeObj = MES2424; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES3116F=[ DeviceTermoInfo: fullTypeObj = MES3116F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3116=[ DeviceTermoInfo: fullTypeObj = MES3116; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, MES3508P=[ DeviceTermoInfo: fullTypeObj = MES3508P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482] ]
+, SMG2016=[ DeviceTermoInfo: fullTypeObj = SMG2016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU72revDsip=[ DeviceTermoInfo: fullTypeObj = TAU72revDsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, WOP-2ac-RevC=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-RevC; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, TAU36megaco=[ DeviceTermoInfo: fullTypeObj = TAU36megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, MES2408C=[ DeviceTermoInfo: fullTypeObj = MES2408C; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SBC2000=[ DeviceTermoInfo: fullTypeObj = SBC2000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, MES2324FB=[ DeviceTermoInfo: fullTypeObj = MES2324FB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2408B=[ DeviceTermoInfo: fullTypeObj = MES2408B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG1016M-R=[ DeviceTermoInfo: fullTypeObj = SMG1016M-R; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, WOP-12ac=[ DeviceTermoInfo: fullTypeObj = WOP-12ac; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2424B=[ DeviceTermoInfo: fullTypeObj = MES2424B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2408=[ DeviceTermoInfo: fullTypeObj = MES2408; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2448B=[ DeviceTermoInfo: fullTypeObj = MES2448B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES2448E=[ DeviceTermoInfo: fullTypeObj = MES2448E; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG500=[ DeviceTermoInfo: fullTypeObj = SMG500; skip = false; sensorsMap = [CPU [sensor-1][65-80]1.3.6.1.4.1.35265.1.29.35.1.0, CPU [sensor-2][65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2408P=[ DeviceTermoInfo: fullTypeObj = MES2408P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, FXS72SIP=[ DeviceTermoInfo: fullTypeObj = FXS72SIP; skip = false; sensorsMap = [temper[65-80]1.3.6.1.4.1.35265.1.44.5.1.1.5] ]
+, SMG1016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG1016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, SMG1016-R=[ DeviceTermoInfo: fullTypeObj = SMG1016-R; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2448P=[ DeviceTermoInfo: fullTypeObj = MES2448P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, WEP-2ac=[ DeviceTermoInfo: fullTypeObj = WEP-2ac; skip = true; sensorsMap = [] ]
+, SMG3016-SIGTRAN=[ DeviceTermoInfo: fullTypeObj = SMG3016-SIGTRAN; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, TAU36revDsip=[ DeviceTermoInfo: fullTypeObj = TAU36revDsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, PowerSupplyUnit[65-80]1.3.6.1.4.1.35265.1.9.10.15.0] ]
+, MES2424P=[ DeviceTermoInfo: fullTypeObj = MES2424P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MXA32=[ DeviceTermoInfo: fullTypeObj = MXA32; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.28.4.2.1.3.2] ]
+, MES5248=[ DeviceTermoInfo: fullTypeObj = MES5248; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482, №3[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420483, №4[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420484] ]
+, LTE2X=[ DeviceTermoInfo: fullTypeObj = LTE2X; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, WEP-2ac-Smart=[ DeviceTermoInfo: fullTypeObj = WEP-2ac-Smart; skip = true; sensorsMap = [] ]
+, ESR200=[ DeviceTermoInfo: fullTypeObj = ESR200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.12.0] ]
+, MES3348=[ DeviceTermoInfo: fullTypeObj = MES3348; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES3324-RevB=[ DeviceTermoInfo: fullTypeObj = MES3324-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR-1700=[ DeviceTermoInfo: fullTypeObj = ESR-1700; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES3000L=[ DeviceTermoInfo: fullTypeObj = MES3000L; skip = false; sensorsMap = [SFP [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.8.0, CPU [unit-1][65-80]1.3.6.1.4.1.35265.1.13.30.10.0, Switch [unit-1][80-90]1.3.6.1.4.1.35265.1.13.30.12.0, SFP [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.9.0, CPU [unit-2][65-80]1.3.6.1.4.1.35265.1.13.30.11.0, Switch [unit-2][80-90]1.3.6.1.4.1.35265.1.13.30.13.0] ]
+, MES2424-RevB=[ DeviceTermoInfo: fullTypeObj = MES2424-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU72v30megaco=[ DeviceTermoInfo: fullTypeObj = TAU72v30megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, ESR-3200=[ DeviceTermoInfo: fullTypeObj = ESR-3200; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, LTP8X=[ DeviceTermoInfo: fullTypeObj = LTP8X; skip = false; sensorsMap = [SFP[60-70]1.3.6.1.4.1.35265.1.22.1.10.10.0, PON[60-70]1.3.6.1.4.1.35265.1.22.1.10.11.0] ]
+, MES2348B=[ DeviceTermoInfo: fullTypeObj = MES2348B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2324B=[ DeviceTermoInfo: fullTypeObj = MES2324B; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, TAU72v30sip=[ DeviceTermoInfo: fullTypeObj = TAU72v30sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, LTE8X=[ DeviceTermoInfo: fullTypeObj = LTE8X; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, WEP-2ac-Z=[ DeviceTermoInfo: fullTypeObj = WEP-2ac-Z; skip = true; sensorsMap = [] ]
+, MES2324F=[ DeviceTermoInfo: fullTypeObj = MES2324F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, LTE8ST=[ DeviceTermoInfo: fullTypeObj = LTE8ST; skip = false; sensorsMap = [termo[60-70]1.3.6.1.4.1.35265.1.21.30.3.0] ]
+, MES2308R=[ DeviceTermoInfo: fullTypeObj = MES2308R; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, UEP25=[ DeviceTermoInfo: fullTypeObj = UEP25; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.7.5.10.0] ]
+, MES2308P=[ DeviceTermoInfo: fullTypeObj = MES2308P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, UEP23=[ DeviceTermoInfo: fullTypeObj = UEP23; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.7.5.10.0] ]
+, MES2324P=[ DeviceTermoInfo: fullTypeObj = MES2324P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, WOP-12ac-ER-GPON=[ DeviceTermoInfo: fullTypeObj = WOP-12ac-ER-GPON; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES5312=[ DeviceTermoInfo: fullTypeObj = MES5312; skip = false; sensorsMap = [Switch[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421377, SFP[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421378, CPLD[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68421379] ]
+, MES2348P=[ DeviceTermoInfo: fullTypeObj = MES2348P; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, CiscoWLC=[ DeviceTermoInfo: fullTypeObj = CiscoWLC; skip = true; sensorsMap = [] ]
+, GenericAp=[ DeviceTermoInfo: fullTypeObj = GenericAp; skip = true; sensorsMap = [] ]
+, MES3316F=[ DeviceTermoInfo: fullTypeObj = MES3316F; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, ESR-1511=[ DeviceTermoInfo: fullTypeObj = ESR-1511; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.89.53.15.1.9.0, Switch[65-80]1.3.6.1.4.1.89.53.15.1.12.0, SFP[65-80]1.3.6.1.4.1.89.53.15.1.14.0, Board[65-80]1.3.6.1.4.1.89.53.15.1.16.0] ]
+, MES2324=[ DeviceTermoInfo: fullTypeObj = MES2324; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MES2408IP=[ DeviceTermoInfo: fullTypeObj = MES2408IP; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MXA24=[ DeviceTermoInfo: fullTypeObj = MXA24; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.6.4.2.1.3.1, №2[65-80]1.3.6.1.4.1.35265.1.6.4.2.1.3.2] ]
+, MES2308=[ DeviceTermoInfo: fullTypeObj = MES2308; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481] ]
+, MYSQL=[ DeviceTermoInfo: fullTypeObj = MYSQL; skip = true; sensorsMap = [] ]
+, MES2428=[ DeviceTermoInfo: fullTypeObj = MES2428; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, SMG3016=[ DeviceTermoInfo: fullTypeObj = SMG3016; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.29.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.29.35.2.0] ]
+, MES2424P-RevB=[ DeviceTermoInfo: fullTypeObj = MES2424P-RevB; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, TAU24sip=[ DeviceTermoInfo: fullTypeObj = TAU24sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, DHCP=[ DeviceTermoInfo: fullTypeObj = DHCP; skip = true; sensorsMap = [] ]
+, UEP33=[ DeviceTermoInfo: fullTypeObj = UEP33; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.34.5.7.0, №2[65-80]1.3.6.1.4.1.35265.1.34.5.8.0, №3[65-80]1.3.6.1.4.1.35265.1.34.5.9.0] ]
+, WOP-2ac-SFP=[ DeviceTermoInfo: fullTypeObj = WOP-2ac-SFP; skip = false; sensorsMap = [Board[65-80]1.3.6.1.4.1.35265.1.60.3.1.0] ]
+, MES2408PL=[ DeviceTermoInfo: fullTypeObj = MES2408PL; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.2076.81.1.66.0] ]
+, MES7048=[ DeviceTermoInfo: fullTypeObj = MES7048; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.0, Switch[65-80]1.3.6.1.4.1.4413.1.1.43.1.8.1.5.{unit}.1] ]
+, MES5148=[ DeviceTermoInfo: fullTypeObj = MES5148; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420481, №2[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420482, №3[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420483, №4[65-80]1.3.6.1.4.1.89.83.2.1.1.1.4.68420484] ]
+, UEP41=[ DeviceTermoInfo: fullTypeObj = UEP41; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.35265.1.57.5.7.0, №2[65-80]1.3.6.1.4.1.35265.1.57.5.8.0] ]
+, SSW=[ DeviceTermoInfo: fullTypeObj = SSW; skip = true; sensorsMap = [] ]
+, TAU36v40sip=[ DeviceTermoInfo: fullTypeObj = TAU36v40sip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0] ]
+, TAU72v40megaco=[ DeviceTermoInfo: fullTypeObj = TAU72v40megaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, TAU16revBsip=[ DeviceTermoInfo: fullTypeObj = TAU16revBsip; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+, SBC3000=[ DeviceTermoInfo: fullTypeObj = SBC3000; skip = false; sensorsMap = [CPU[65-80]1.3.6.1.4.1.35265.1.49.35.1.0, SWITCH[65-80]1.3.6.1.4.1.35265.1.49.35.2.0] ]
+, MES3124=[ DeviceTermoInfo: fullTypeObj = MES3124; skip = false; sensorsMap = [№1[65-80]1.3.6.1.4.1.89.53.15.1.9.1, №2[65-80]1.3.6.1.4.1.89.53.15.1.12.1, №3[65-80]1.3.6.1.4.1.89.53.15.1.14.1] ]
+, TAU72revBmegaco=[ DeviceTermoInfo: fullTypeObj = TAU72revBmegaco; skip = false; sensorsMap = [BOARD1[65-80]1.3.6.1.4.1.35265.1.9.10.5.0, BOARD2[65-80]1.3.6.1.4.1.35265.1.9.10.6.0, BOARD3[65-80]1.3.6.1.4.1.35265.1.9.10.7.0, BOARD4[65-80]1.3.6.1.4.1.35265.1.9.10.8.0] ]
+}'
+2023-12-21T17:09:57,394 [main] INFO  DB TreeObjectStorage.loadAllTreeObjParamsList(line:1620). Load next 100000 ELTEX_OBJ_PROP offset 0
+2023-12-21T17:09:57,399 [main] INFO  DB TreeObjectStorage.loadAllTreeObjParamsList(line:1620). Load next 100000 ELTEX_OBJ_PROP offset 1001
+2023-12-21T17:09:57,400 [main] INFO  DB TreeContainer.fillBaseTreeParameters(line:661). Start
+2023-12-21T17:09:57,427 [main] INFO  DB TreeContainer.fillSnmpObjectsParameters(line:706). Start
+2023-12-21T17:09:57,428 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:580). Get all snmp objects without IPs
+2023-12-21T17:09:57,428 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:586). Get all snmp objects with unique IPs
+2023-12-21T17:09:57,429 [main] INFO  DB TreeContainer.fillTreeWithParameters(line:593). Get all snmp objects that is located on localhost
+2023-12-21T17:09:57,535 [main] INFO  Kernel TreeContainer.postUpLoadTreeProcessing(line:629). [TIME_LOAD_DB] load Tree: Created ObjectList from root (all objects), size = 1
+2023-12-21T17:09:57,655 [main] INFO  Kernel WipsWidsLicenceManager.init(line:92). WIPS/WIDS licence group = ; maxSize = 3; currentSize = 0
+2023-12-21T17:09:57,747 [main] INFO  Kernel TreeContainer.checkDevicePingPeriod(line:2256). DevicePingPeriod: recommended period = 30, now = 60
+2023-12-21T17:09:57,789 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler Monitor_$_1 started.
+2023-12-21T17:09:57,826 [main] INFO  Kernel PDUAlertDispatcher.startInit(line:850). [AUTO_TRAP] startInit. Type = AUTO
+2023-12-21T17:09:58,271 [Thread-11] INFO  Snmp AlertGeneralHandler.run(line:80). Alerts listener: poolSize = 6
+2023-12-21T17:09:58,300 [main] INFO  Kernel AvailableDevicePingV2.<init>(line:190). AvailableDevicePingV2:: Create queue. Size = 0
+2023-12-21T17:09:58,475 [main] INFO  tftpserver TFtpServerModule.start(line:62). Start with tftp.port = 69
+2023-12-21T17:09:58,557 [main] INFO  DB ConnectionsDB.checkDbConnSize(line:547). DB max conn. maxConn = 151; EMC max = 166; Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; 
+2023-12-21T17:09:58,559 [main] ERROR Kernel Server.main(line:291). Init EMS server errors: 
+Ошибка БД при загрузке модуля 'acs':
+Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+Инциализация модуля 'acs' остановлена. Модуль будет удалён.
+
+Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; Total = 166
+
+2023-12-21T17:09:59,129 [main] ERROR Kernel Server.main(line:302). -----------V--------------- EMS_SERVER is started -------------V-----------
+2023-12-21T17:09:59,280 [LogsDispatcher] INFO  events LogsDispatcher.handle(line:62). [login: "", user_ip: "", host_ip: "10.0.2.15"][mode: "EMS_SERVER", function: "START", status: "OK"]
+2023-12-21T17:09:59,490 [Timer-7] INFO  Kernel VendorContainer$Refresher.run(line:139). Start
+2023-12-21T17:09:59,521 [main] INFO  Kernel Server.main(line:314). Wait for EMS server port listener down.
+2023-12-21T17:10:00,140 [GuiListener2v] INFO  Kernel Listener.waitEmsStart(line:271). Wait start EMS server: works in 2 sec. result = true
+2023-12-21T17:10:00,323 [Monitor_EmsServerDiagnostics-4] ERROR Kernel Monitor.isJobActive(line:520). [EmsServerDiagnostics] Monitor is already active. Activation counter = 2
+2023-12-21T17:10:00,331 [Monitor_EmsServerDiagnostics-4] ERROR Kernel Monitor.sendAlreadyLaunched(line:441). [EmsServerDiagnostics] Error - already launched
+org.eltex.ems.web.common.exception.EltexException: Монитор 'EmsServerDiagnostics' уже запущен. Необходимо увеличить период запуска монитора!
+	at org.eltex.ems.web.server.monitor.Monitor.sendAlreadyLaunched(Monitor.java:432) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:265) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:00,378 [Monitor_EmsServerDiagnostics-4] INFO  Kernel Monitor.execute(line:270). Monitor EmsServerDiagnostics 'process' has been skipped. Status: SKIPPED
+2023-12-21T17:10:00,378 [Monitor_EmsServerDiagnostics-4] INFO  Kernel Monitor.execute(line:367). [EmsServerDiagnostics] Total time spent: 00:00 min:sec, OK
+2023-12-21T17:10:00,378 [Monitor_EmsServerDiagnostics-4] INFO  Kernel Monitor.execute(line:379). 
+=============================== MONITOR 'EmsServerDiagnostics' FINISH ===============================
+
+
+2023-12-21T17:10:01,118 [Timer-7] INFO  Kernel VendorContainer$Refresher.run(line:141). Complete, 34825 loaded
+2023-12-21T17:10:01,456 [Monitor_EmsServerDiagnostics-1] ERROR Kernel ObjectHandler.handleCommand(line:213). Error: command = [ Command: action = GET_NET_INFO; objectType = EMS_SERVER; sessionId = session; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=1, treeObj=null, tabName='null', methodName='null', description='null', object=eth0, processId='null', logs=null}; commandId = CMD:GET_NET_INFO_EMS_SERVER_2023-12-21_17:10:01.402; additionalCommands.size = 0 ]
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,456 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = net
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,458 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.process(line:109). Error on getting 'net': Сетевой интерфейс 'eth0' не найден.
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:14,469 [GuiHandler2v_0] INFO  Kernel AuthUserCommander.handle(line:69). login = 'northbound'
+2023-12-21T17:10:14,589 [GuiHandler2v_0] INFO  Kernel UsersContainer.getInstance(line:65). load: usersMapName, size=3; usersMapId, size=3; usersPassMapName = 3;
+2023-12-21T17:10:14,634 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=236; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=UserAuth ] [ ActionInfo: Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_SYSTEM_2023-12-21_17:10:14.262; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER ] [ TimeDetailInfo (ms): Start=3; SocketRead=65; StartProcess=0; Session=0; AdditionalCommands=0; Command=137; (isInterrupt=false); SocketSend=30; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: AUTH_USER. Additional:  ]
+2023-12-21T17:10:14,959 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T17:10:14,966 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=147; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_17-10-14.603; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_17:10:14.819; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=3; SocketRead=135; StartProcess=0; Session=0; AdditionalCommands=0; Command=6; FillAlerts=0; (isInterrupt=false); SocketSend=2; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]
+2023-12-21T17:14:58,473 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:87). Start
+2023-12-21T17:14:58,476 [Timer-6] INFO  Kernel WifiMacContainer$Refresher.run(line:109). Complete, 0 loaded
+2023-12-21T17:15:02,249 [GuiHandler2v_0] INFO  Kernel NorthboundCommander.handleNorthbound(line:297). NB: Start. actionName = getVersion; parameters = {}
+2023-12-21T17:15:02,250 [GuiHandler2v_0] INFO  Kernel SocketHandler.processTime(line:183). [ WorkTime (ms): Work=10; CloseSocket=0 ] [ UserInfo: user_ip=127.0.0.1; user=northbound ] [ ActionInfo: Action=NORTHBOUND; sessionId=northbound_127.0.0.1_2023-12-21_17-10-14.603; commandId=CMD:NORTHBOUND_northbound_SYSTEM_2023-12-21_17:15:02.238; Type=SYSTEM |  objId=-1; treeObj=null; method=null requestAction=getVersion ] [ TimeDetailInfo (ms): Start=3; SocketRead=5; StartProcess=0; Session=0; AdditionalCommands=0; Command=1; FillAlerts=0; (isInterrupt=false); SocketSend=0; ProcessAfter=0 ] [ Error: NO ] [ AddInfo: NORTHBOUND. Additional:  ]

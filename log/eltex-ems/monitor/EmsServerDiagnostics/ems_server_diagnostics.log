@@ -1,0 +1,46 @@
+2023-12-21T16:50:47,587 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = state
+org.eltex.ems.web.common.exception.EltexException: Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:419) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:483) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.server.SnmpServer.getServerState(SnmpServer.java:83) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:110) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T16:50:47,663 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics SystemReportStorage.saveReport(line:32). MonitorReport [ type = ERROR; name = EmsServerDiagnostics; msg = EMS server diagnostics:
+- get '5' parameters for diagnostics.
+Error on getting 'state': Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+Diagnostics complete:
+- total controlled parameters: 0
+- alerts generated: 0
+- not found: 0 ]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics Monitor.execute(line:369). [EmsServerDiagnostics] Total time spent: 00:01 min:sec, ERROR
+2023-12-21T17:10:01,456 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = net
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,458 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.process(line:109). Error on getting 'net': Сетевой интерфейс 'eth0' не найден.
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]

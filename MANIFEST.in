@@ -1,0 +1,7 @@
+include README.md
+include config.ini
+include log/eltex-ems/events.log
+include log/eltex-ems/events2.log
+include log/eltex-ems/error-test.log
+include log/eltex-portal-constructor/portal-constructor.log 
+include log/eltex-portal-constructor/user-actions.log

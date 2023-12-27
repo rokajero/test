@@ -1,0 +1,5 @@
+2023-12-21 16:50:46,519 INFO  [login: "", user_ip: "", host_ip: "10.0.2.15"][mode: "EMS_SERVER", function: "START", status: "OK"]
+2023-12-21 16:52:30,527 INFO  [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15", role: "SuperUser"][mode: "USER", function: "LOGIN", status: "OK"]
+2023-12-21 16:54:09,246 INFO  [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15"][mode: "USER", function: "LOGIN", status: "ERROR"]
+2023-12-21 17:08:53,123 INFO  [login: "admin (GUI)", user_ip: "192.168.56.1", host_ip: "10.0.2.15"][mode: "USER", function: "LOGOUT", status: "OK"]
+2023-12-21 17:09:59,280 INFO  [login: "", user_ip: "", host_ip: "10.0.2.15"][mode: "EMS_SERVER", function: "START", status: "OK"]

@@ -1,0 +1,467 @@
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 16:50:01: System information:
+21-12-2023 16:50:01: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 16:50:01: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 16:50:01: LoadAverage info
+21-12-2023 16:50:01: 1min 5min 15min
+21-12-2023 16:50:01: 5.13 1.09 0.35 43/784 2742
+21-12-2023 16:50:01: RAM MemFree:         7273056 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   12G   17G  43% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop1       33M   33M     0 100% /snap/snapd/12883
+/dev/loop2       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop3      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop4      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop0       56M   56M     0 100% /snap/core18/2128
+/dev/loop5      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop7       62M   62M     0 100% /snap/core20/1081
+/dev/loop6      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop8      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop9      242M  242M     0 100% /snap/gnome-3-38-2004/70
+
+21-12-2023 16:50:01: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 16:49:53 MSK; 8s ago
+  Process: 805 ExecStart=/etc/init.d/eltex-ems start (code=exited, status=0/SUCCESS)
+ Main PID: 1369 (daemon)
+    Tasks: 30 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1369 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1371 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 16:49:51 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 16:49:51 rokajero eltex-ems[805]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 16:49:53 rokajero eltex-ems[805]:    ...done.
+Dec 21 16:49:53 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 16:49:53 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 16:50:01: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 16:49:57 MSK; 4s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 1115 ExecStart=/etc/init.d/tomcat8 start (code=exited, status=0/SUCCESS)
+    Tasks: 26 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1267 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 16:49:52 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 16:49:52 rokajero tomcat8[1115]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 16:49:57 rokajero tomcat8[1115]:    ...done.
+Dec 21 16:49:57 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 16:50:01: ports (9310, 9340, 8080) status:
+
+
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1200/nginx: master  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1200/nginx: master  
+
+21-12-2023: Didn't receive OK response from Northbound: Tomcat may not work
+21-12-2023: EMS may not work
+21-12-2023: Didn't receive OK response from Northbound: Tomcat may not work
+21-12-2023: EMS may not work
+21-12-2023: Northbound is working
+21-12-2023: EMS and Northbound are working
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 16:55:01: System information:
+21-12-2023 16:55:01: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 16:55:01: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 16:55:01: LoadAverage info
+21-12-2023 16:55:01: 1min 5min 15min
+21-12-2023 16:55:01: 2.89 6.14 3.33 2/1692 8024
+21-12-2023 16:55:01: RAM MemFree:          137408 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   14G   15G  49% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop2       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop3      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop4      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop0       56M   56M     0 100% /snap/core18/2128
+/dev/loop5      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop7       62M   62M     0 100% /snap/core20/1081
+/dev/loop6      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop8      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop9      242M  242M     0 100% /snap/gnome-3-38-2004/70
+/dev/loop10      41M   41M     0 100% /snap/snapd/20290
+/dev/loop11      75M   75M     0 100% /snap/core22/1033
+/dev/loop12     128K  128K     0 100% /snap/bare/5
+/dev/loop13     512K  512K     0 100% /snap/gnome-characters/795
+/dev/loop14     1.7M  1.7M     0 100% /snap/gnome-system-monitor/186
+/dev/loop15     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop16     896K  896K     0 100% /snap/gnome-logs/121
+/dev/loop17     2.3M  2.3M     0 100% /snap/gnome-calculator/955
+/dev/loop18      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop19     350M  350M     0 100% /snap/gnome-3-38-2004/143
+/dev/loop20     497M  497M     0 100% /snap/gnome-42-2204/141
+
+21-12-2023 16:55:01: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 16:49:53 MSK; 5min ago
+ Main PID: 1369 (daemon)
+    Tasks: 98 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1369 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1371 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 16:49:51 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 16:49:51 rokajero eltex-ems[805]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 16:49:53 rokajero eltex-ems[805]:    ...done.
+Dec 21 16:49:53 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 16:49:53 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 16:55:01: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 16:49:57 MSK; 5min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 60 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1267 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 16:49:52 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 16:49:52 rokajero tomcat8[1115]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 16:49:57 rokajero tomcat8[1115]:    ...done.
+Dec 21 16:49:57 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 16:55:01: ports (9310, 9340, 8080) status:
+tcp6       0      0 :::9310                 :::*                    LISTEN      1371/java           
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55280      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55277      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55267      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55283      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55291      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55261      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55288      TIME_WAIT   -                   
+
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1200/nginx: master  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1200/nginx: master  
+
+21-12-2023: Northbound is working
+21-12-2023: EMS and Northbound are working
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 17:00:01: System information:
+21-12-2023 17:00:01: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 17:00:01: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 17:00:01: LoadAverage info
+21-12-2023 17:00:01: 1min 5min 15min
+21-12-2023 17:00:01: 1.48 3.58 3.02 1/1693 18734
+21-12-2023 17:00:01: RAM MemFree:          204000 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   14G   15G  50% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop2       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop3      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop4      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop0       56M   56M     0 100% /snap/core18/2128
+/dev/loop5      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop7       62M   62M     0 100% /snap/core20/1081
+/dev/loop6      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop8      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop9      242M  242M     0 100% /snap/gnome-3-38-2004/70
+/dev/loop10      41M   41M     0 100% /snap/snapd/20290
+/dev/loop11      75M   75M     0 100% /snap/core22/1033
+/dev/loop12     128K  128K     0 100% /snap/bare/5
+/dev/loop13     512K  512K     0 100% /snap/gnome-characters/795
+/dev/loop14     1.7M  1.7M     0 100% /snap/gnome-system-monitor/186
+/dev/loop15     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop16     896K  896K     0 100% /snap/gnome-logs/121
+/dev/loop17     2.3M  2.3M     0 100% /snap/gnome-calculator/955
+/dev/loop18      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop19     350M  350M     0 100% /snap/gnome-3-38-2004/143
+/dev/loop20     497M  497M     0 100% /snap/gnome-42-2204/141
+
+21-12-2023 17:00:01: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 16:49:53 MSK; 10min ago
+ Main PID: 1369 (daemon)
+    Tasks: 101 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1369 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1371 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 16:49:51 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 16:49:51 rokajero eltex-ems[805]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 16:49:53 rokajero eltex-ems[805]:    ...done.
+Dec 21 16:49:53 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 16:49:53 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 17:00:01: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 16:49:57 MSK; 10min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 60 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1267 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 16:49:52 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 16:49:52 rokajero tomcat8[1115]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 16:49:57 rokajero tomcat8[1115]:    ...done.
+Dec 21 16:49:57 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 17:00:01: ports (9310, 9340, 8080) status:
+tcp6       0      0 :::9310                 :::*                    LISTEN      1371/java           
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55535      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55520      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55505      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55506      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55507      TIME_WAIT   -                   
+
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1200/nginx: master  
+tcp        0      0 192.168.56.104:8080     192.168.56.1:55525      ESTABLISHED 1202/nginx: worker  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1200/nginx: master  
+
+21-12-2023: Northbound is working
+21-12-2023: EMS and Northbound are working
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 17:05:01: System information:
+21-12-2023 17:05:01: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 17:05:01: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 17:05:01: LoadAverage info
+21-12-2023 17:05:01: 1min 5min 15min
+21-12-2023 17:05:01: 2.88 2.72 2.76 2/1709 18321
+21-12-2023 17:05:01: RAM MemFree:          280980 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   14G   15G  50% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop2       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop3      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop4      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop0       56M   56M     0 100% /snap/core18/2128
+/dev/loop5      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop7       62M   62M     0 100% /snap/core20/1081
+/dev/loop6      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop8      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop9      242M  242M     0 100% /snap/gnome-3-38-2004/70
+/dev/loop10      41M   41M     0 100% /snap/snapd/20290
+/dev/loop11      75M   75M     0 100% /snap/core22/1033
+/dev/loop12     128K  128K     0 100% /snap/bare/5
+/dev/loop13     512K  512K     0 100% /snap/gnome-characters/795
+/dev/loop14     1.7M  1.7M     0 100% /snap/gnome-system-monitor/186
+/dev/loop15     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop16     896K  896K     0 100% /snap/gnome-logs/121
+/dev/loop17     2.3M  2.3M     0 100% /snap/gnome-calculator/955
+/dev/loop18      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop19     350M  350M     0 100% /snap/gnome-3-38-2004/143
+/dev/loop20     497M  497M     0 100% /snap/gnome-42-2204/141
+
+21-12-2023 17:05:01: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 16:49:53 MSK; 15min ago
+ Main PID: 1369 (daemon)
+    Tasks: 99 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1369 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1371 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 16:49:51 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 16:49:51 rokajero eltex-ems[805]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 16:49:53 rokajero eltex-ems[805]:    ...done.
+Dec 21 16:49:53 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 16:49:53 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 17:05:01: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 16:49:57 MSK; 15min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 60 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1267 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 16:49:52 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 16:49:52 rokajero tomcat8[1115]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 16:49:57 rokajero tomcat8[1115]:    ...done.
+Dec 21 16:49:57 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 17:05:01: ports (9310, 9340, 8080) status:
+tcp6       0      0 :::9310                 :::*                    LISTEN      1371/java           
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55733      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55714      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55751      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55721      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55745      TIME_WAIT   -                   
+tcp6       0      0 192.168.56.104:9310     192.168.56.1:55742      TIME_WAIT   -                   
+
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1200/nginx: master  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1200/nginx: master  
+
+21-12-2023: Northbound is working
+21-12-2023: EMS and Northbound are working
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 17:10:02: System information:
+21-12-2023 17:10:02: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 17:10:02: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 17:10:02: LoadAverage info
+21-12-2023 17:10:02: 1min 5min 15min
+21-12-2023 17:10:02: 21.95 5.92 2.01 16/1519 3419
+21-12-2023 17:10:02: RAM MemFree:         2109096 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   14G   15G  50% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop3      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop2      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop1      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop4       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop5      350M  350M     0 100% /snap/gnome-3-38-2004/143
+/dev/loop6      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop0      896K  896K     0 100% /snap/gnome-logs/121
+/dev/loop8      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop7       92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop9      512K  512K     0 100% /snap/gnome-characters/795
+/dev/loop10     128K  128K     0 100% /snap/bare/5
+/dev/loop11      56M   56M     0 100% /snap/core18/2128
+/dev/loop12      75M   75M     0 100% /snap/core22/1033
+/dev/loop13     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop14      62M   62M     0 100% /snap/core20/1081
+/dev/loop15     1.7M  1.7M     0 100% /snap/gnome-system-monitor/186
+/dev/loop16     497M  497M     0 100% /snap/gnome-42-2204/141
+/dev/loop17     242M  242M     0 100% /snap/gnome-3-38-2004/70
+/dev/loop18     2.3M  2.3M     0 100% /snap/gnome-calculator/955
+/dev/loop19      41M   41M     0 100% /snap/snapd/20290
+
+21-12-2023 17:10:02: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 17:08:35 MSK; 1min 26s ago
+  Process: 830 ExecStart=/etc/init.d/eltex-ems start (code=exited, status=0/SUCCESS)
+ Main PID: 1334 (daemon)
+    Tasks: 95 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1334 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1336 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 17:08:34 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 17:08:34 rokajero eltex-ems[830]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 17:08:35 rokajero eltex-ems[830]:    ...done.
+Dec 21 17:08:35 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 17:08:35 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 17:10:02: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 17:08:40 MSK; 1min 21s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 1128 ExecStart=/etc/init.d/tomcat8 start (code=exited, status=0/SUCCESS)
+    Tasks: 27 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1254 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 17:08:35 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 17:08:35 rokajero tomcat8[1128]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 17:08:40 rokajero tomcat8[1128]:    ...done.
+Dec 21 17:08:40 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 17:10:02: ports (9310, 9340, 8080) status:
+tcp6       0      0 :::9310                 :::*                    LISTEN      1336/java           
+
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1148/nginx: master  
+tcp        0      0 127.0.0.1:8080          127.0.0.1:44244         ESTABLISHED 1153/nginx: worker  
+tcp        0      0 127.0.0.1:8080          127.0.0.1:44216         ESTABLISHED 1151/nginx: worker  
+tcp        0      0 192.168.56.104:8080     192.168.56.1:55944      ESTABLISHED 1154/nginx: worker  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1148/nginx: master  
+tcp6       0      0 127.0.0.1:44244         127.0.0.1:8080          ESTABLISHED 837/java            
+tcp6       0      0 127.0.0.1:44216         127.0.0.1:8080          ESTABLISHED 845/java            
+
+21-12-2023: Didn't receive OK response from Northbound: Tomcat may not work
+21-12-2023: EMS and Northbound are working
+ 
+----------------------------- (START) ------------------------------
+21-12-2023 17:15:02: System information:
+21-12-2023 17:15:02: Linux rokajero 5.4.0-84-generic #94~18.04.1-Ubuntu SMP Thu Aug 26 23:17:46 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+21-12-2023 17:15:02: openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u372-ga~us1-0ubuntu1~18.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+21-12-2023 17:15:02: LoadAverage info
+21-12-2023 17:15:02: 1min 5min 15min
+21-12-2023 17:15:02: 2.75 3.43 2.02 1/1976 4839
+21-12-2023 17:15:02: RAM MemFree:          180712 kB
+Disk info
+Disk              Size   Used   Available   Used %   Mount
+/dev/sda1        30G   14G   15G  50% /
+tmpfs           4.9G     0  4.9G   0% /dev/shm
+/dev/loop3      2.5M  2.5M     0 100% /snap/gnome-calculator/884
+/dev/loop2      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop1      2.5M  2.5M     0 100% /snap/gnome-system-monitor/163
+/dev/loop4       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop5      350M  350M     0 100% /snap/gnome-3-38-2004/143
+/dev/loop6      640K  640K     0 100% /snap/gnome-logs/106
+/dev/loop0      896K  896K     0 100% /snap/gnome-logs/121
+/dev/loop8      768K  768K     0 100% /snap/gnome-characters/726
+/dev/loop7       92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop9      512K  512K     0 100% /snap/gnome-characters/795
+/dev/loop10     128K  128K     0 100% /snap/bare/5
+/dev/loop11      56M   56M     0 100% /snap/core18/2128
+/dev/loop12      75M   75M     0 100% /snap/core22/1033
+/dev/loop13     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop14      62M   62M     0 100% /snap/core20/1081
+/dev/loop15     1.7M  1.7M     0 100% /snap/gnome-system-monitor/186
+/dev/loop16     497M  497M     0 100% /snap/gnome-42-2204/141
+/dev/loop17     242M  242M     0 100% /snap/gnome-3-38-2004/70
+/dev/loop18     2.3M  2.3M     0 100% /snap/gnome-calculator/955
+/dev/loop19      41M   41M     0 100% /snap/snapd/20290
+
+21-12-2023 17:15:02: EMS status: ● eltex-ems.service - Eltex EMS
+   Loaded: loaded (/usr/lib/systemd/system/eltex-ems.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-12-21 17:08:35 MSK; 6min ago
+  Process: 830 ExecStart=/etc/init.d/eltex-ems start (code=exited, status=0/SUCCESS)
+ Main PID: 1334 (daemon)
+    Tasks: 94 (limit: 4915)
+   CGroup: /system.slice/eltex-ems.service
+           ├─1334 /usr/bin/daemon --name=eltex-ems --inherit --unsafe --pidfile=/var/run/eltex-ems/eltex-ems.pid -- /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+           └─1336 /usr/bin/java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/var/log/eltex-ems -Djava.security.egd=file:/dev/./urandom -XX:+UseG1GC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=5M -XX:+UseStringDeduplication -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -Xloggc:/var/log/eltex-ems/gc.log -Djava.security.egd=file:/dev/./urandom -Xms256m -Xmx1024m -Dmodule.home=/usr/lib/eltex-ems -Dlog4j.configurationFile=/usr/lib/eltex-ems/conf/log4j2.xml -Dfile.encoding=UTF-8 -jar /usr/lib/eltex-ems/lib/ems_server.jar
+
+Dec 21 17:08:34 rokajero systemd[1]: Starting Eltex EMS...
+Dec 21 17:08:34 rokajero eltex-ems[830]:  * Starting Eltex.EMS Server eltex-ems
+Dec 21 17:08:35 rokajero eltex-ems[830]:    ...done.
+Dec 21 17:08:35 rokajero systemd[1]: eltex-ems.service: Can't open PID file /var/run/eltex-ems/eltex-ems.pid (yet?) after start: No such file or directory
+Dec 21 17:08:35 rokajero systemd[1]: Started Eltex EMS.
+21-12-2023 17:15:02: Tomcat status: ● tomcat8.service - LSB: Start Tomcat.
+   Loaded: loaded (/etc/init.d/tomcat8; generated)
+  Drop-In: /etc/systemd/system/tomcat8.service.d
+           └─axis2.conf, northbound.conf
+   Active: active (running) since Thu 2023-12-21 17:08:40 MSK; 6min ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 1128 ExecStart=/etc/init.d/tomcat8 start (code=exited, status=0/SUCCESS)
+    Tasks: 60 (limit: 4915)
+   CGroup: /system.slice/tomcat8.service
+           └─1254 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat8 -Dcatalina.home=/usr/share/tomcat8 -Djava.io.tmpdir=/tmp/tomcat8-tomcat8-tmp org.apache.catalina.startup.Bootstrap start
+
+Dec 21 17:08:35 rokajero systemd[1]: Starting LSB: Start Tomcat....
+Dec 21 17:08:35 rokajero tomcat8[1128]:  * Starting Tomcat servlet engine tomcat8
+Dec 21 17:08:40 rokajero tomcat8[1128]:    ...done.
+Dec 21 17:08:40 rokajero systemd[1]: Started LSB: Start Tomcat..
+
+21-12-2023 17:15:02: ports (9310, 9340, 8080) status:
+tcp6       0      0 :::9310                 :::*                    LISTEN      1336/java           
+tcp        0      0 127.0.0.1:27017         127.0.0.1:59340         ESTABLISHED 832/mongod          
+tcp6       0      0 127.0.0.1:59340         127.0.0.1:27017         ESTABLISHED 837/java            
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      1148/nginx: master  
+tcp        0      0 192.168.56.104:8080     192.168.56.1:56293      ESTABLISHED 1153/nginx: worker  
+tcp        0      0 192.168.56.104:8080     192.168.56.1:56059      ESTABLISHED 1151/nginx: worker  
+tcp6       0      0 :::8080                 :::*                    LISTEN      1148/nginx: master  
+tcp6       0      0 127.0.0.1:44796         127.0.0.1:8080          TIME_WAIT   -                   
+tcp6       0      0 127.0.0.1:44792         127.0.0.1:8080          TIME_WAIT   -                   
+
+21-12-2023: Northbound is working
+21-12-2023: EMS and Northbound are working

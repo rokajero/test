@@ -1,0 +1,330 @@
+2023-12-21T16:50:12,194 [main] ERROR Kernel Server.main(line:230). 
+
+-------------------------------------- START EMS_SERVER --------------------------------------------
+2023-12-21T16:50:12,215 [main] ERROR Kernel Server.main(line:234). EMS version (from server.jar manifest) : 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T16:50:12,217 [main] ERROR Kernel Server$1.println(line:375). ----- test ERR ------- 
+2023-12-21T16:50:12,300 [main] ERROR Kernel Server.init(line:403). init: Server version = 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T16:50:12,300 [main] ERROR Kernel Server.init(line:405). JAVA version = 1.8.0_362
+2023-12-21T16:50:13,772 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Starting...
+2023-12-21T16:50:13,793 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,352 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Start completed.
+2023-12-21T16:50:15,353 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Starting...
+2023-12-21T16:50:15,390 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,435 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Start completed.
+2023-12-21T16:50:15,437 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Starting...
+2023-12-21T16:50:15,437 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,512 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Start completed.
+2023-12-21T16:50:15,513 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Starting...
+2023-12-21T16:50:15,542 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:15,576 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Start completed.
+2023-12-21T16:50:29,395 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - cache - Starting...
+2023-12-21T16:50:29,395 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:30,461 [main] ERROR Kernel Server$1.println(line:375). [main] ERROR com.zaxxer.hikari.pool.HikariPool - cache - Exception during pool initialization.
+2023-12-21T16:50:30,462 [main] ERROR Kernel Server$1.print(line:370). com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T16:50:30,462 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T16:50:30,463 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T16:50:30,464 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+2023-12-21T16:50:30,464 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2023-12-21T16:50:30,465 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2023-12-21T16:50:30,465 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2023-12-21T16:50:30,466 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+2023-12-21T16:50:30,467 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+2023-12-21T16:50:30,468 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T16:50:30,469 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+2023-12-21T16:50:30,470 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.HikariConnectionPool.<init>(HikariConnectionPool.java:49)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.createPool(MultiConnectionPool.java:73)
+2023-12-21T16:50:30,471 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.addPools(MultiConnectionPool.java:61)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.ConnectionsDB.init(ConnectionsDB.java:233)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.module.ServerModule.initDBPools(ServerModule.java:127)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.ServerBuilder.checkModules(ServerBuilder.java:465)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.init(Server.java:502)
+2023-12-21T16:50:30,472 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.main(Server.java:252)
+2023-12-21T16:50:30,473 [main] ERROR Kernel ServerBuilder.checkModules(line:470). Disable module 'acs'; checkDb error : Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T16:50:30,937 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Starting...
+2023-12-21T16:50:30,938 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:31,037 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Start completed.
+2023-12-21T16:50:31,180 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Starting...
+2023-12-21T16:50:31,181 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T16:50:31,217 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Start completed.
+2023-12-21T16:50:31,375 [main] ERROR Kernel ServerModule.initDb(line:197). Module gePon start config: {min_nterg14_version=-1.0.0, tftp_host_no_vlan=10.0.2.15, nterg14_image=, max_update=5, nterg14_revb_image=, min_nterg24_version=-1.0.0, max_error=5}
+2023-12-21T16:50:31,523 [main] ERROR Kernel ServerModule.initDb(line:197). Module apb start config: {}
+2023-12-21T16:50:31,525 [main] ERROR Kernel ServerModule.initDb(line:197). Module pcrf start config: {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T16:50:31,542 [main] ERROR Kernel ServerModule.initDb(line:197). Module voipCommon start config: {auto.change.ports.by.traps=false}
+2023-12-21T16:50:31,544 [main] ERROR Kernel ServerModule.initDb(line:197). Module gPon start config: {gpon.version_and_eq_req=true, gpon.rssi_req=true, gpon.ont.tftp.host=10.0.2.15, gui.use_gpon_serial_in_hex=false}
+2023-12-21T16:50:31,554 [main] ERROR Kernel ServerModule.initDb(line:197). Module netconf start config: {netconf.mongodb.url=mongodb://localhost:27017/netconf, netconf.module.enable=false}
+2023-12-21T16:50:31,563 [main] ERROR Kernel ServerModule.initDb(line:197). Module radius start config: {radius.restart.enabled=true, radius.restart.timeout=45, radius.service.name=eltex-radius, ems.host.ip.to.radius=127.0.0.1, radius.localhost.secret=eltex, radius.restart.min_interval=60}
+2023-12-21T16:50:31,568 [main] ERROR Kernel ServerModule.initDb(line:197). Module msan start config: {fxs.autoreload.time.s=0}
+2023-12-21T16:50:31,579 [main] ERROR Kernel ServerModule.initDb(line:197). Module airtune start config: {airtune.api.timeout=5, airtune.api.port=8089, airtune.api.conn_timeout=300, airtune.api.host=10.0.2.15, airtune.api.protocol=http}
+2023-12-21T16:50:33,702 [main] ERROR Kernel ServerModule.initDb(line:197). Module ltp start config: {ltp_n.autocommit=false}
+2023-12-21T16:50:33,888 [main] ERROR Kernel ServerModule.initDb(line:197). Module ftpserver start config: {tftp.boot=/tftpboot, ftp.config.dir=ems, ftp.addr=10.0.2.15, ftp.station.images=station_images, ftp.boot.images=uboot_images, ftp.login=ftp, ftp.password=ftp, ftp.port=21}
+2023-12-21T16:50:33,895 [main] ERROR Kernel ServerModule.initDb(line:197). Module softwlc.nbi start config: {nbi.connection.timeout.sec=30, nbi.url=http://localhost:8080/axis2/services/RadiusNbiService?wsdl, nbi.enabled=true, nbi.password=softwlc, nbi.username=softwlc_service, nbi.request.timeout.sec=120}
+2023-12-21T16:50:33,921 [main] ERROR Kernel ServerModule.initDb(line:197). Module system start config: {gui.settings.separator.trap=, snmp.timeout.prevention=true, alert.mail.port=25, tree.object.attention.alert.priority=CRITICAL, conf.after.add.or.connect.ok=false, snmp.sender.ssl_protocol=TLSv1.2, snmp.sender.inform_timeout=1000, snmp.allow=true, save.filter.value=true, db.tmp.files.dir=/tmp, disable.ap.reset=false, current.locale=ru_RU, alert.syslog.copy=false, snmp.sender.inform_retries=2, monitoring.use=false, tomcat.url=http://10.0.2.15:8080, trap.handler.max_queue=20, snmp.sender.priority.list=CRITICAL, MAJOR, trap.handler.type=AUTO, ping.handler_not_find=CRITICAL, alert.mail.encryption=NONE, use.initialization.link.params=false, tmp.dir=/tmp/ems, kladr.token=, snmp.sender.manager_port=162, table.rowcount=true, ip.adress=10.0.2.15, geocoder.key=, alert.subject=Eltex.EMS, check_hostname=false, support.email.address=, snmp.sender.enable=false, alert.password=password, alert.login=login, trap.handler.max_ip=5, async.process.pool.size=60, user_access_type=BY_DOMAIN, mode.choiceactivealerts=false, snmp.sender.community=public, snmp.sender.separator=, gui.frame.title=Eltex.EMS, alert.set.finish.date.auto=false, snmp.sender.coldstart_enable=true, snmp.sender.enterprise=1.3.6.1.4.1.35265.2.1, snmp.sender.notif_type=1.3.6.1.4.1.35265.3.102, monitor.log.level=ERROR, alert.from=login@mail.server, use.geocoder=GOOGLE, tomcat.urlembeded=http://10.0.2.15:8080, alert.body=Message from '%s', date '%s', type '%s'., alert.separator=, created.session.ping.timeout=121, gui.settings.separator=, http.timeout=300, sync.after.add.or.connect.ok=true, keep.processes.time=24, timeout.connect.lost=120, icmp.allow=true, shared.files.dir=/var/ems-data, snmp.trap.queue.size=20000, log.server.commands=, gui.hide_help_buttons=false, snmp.sender.version=trapv2, mandatory.initialization.link.params=false, snmp.min_timeout.msec=300, alert.enable=false, ip.pingbuffer.pool.size=10, trap.forbid=false, snmp.sender.transliterate=true, alert.mailserver=mail.server, acs.gui.mode=false, ip.pingbuffer.period=60, user.trap=false, ip.pingbuffer.clear.timeout=7200, snmp.sender.manager_ip=192.168.1.1, ip.pingbuffer.flags=-r3 -i 5 -p 500, mode.autoselect=false, ip.pingbuffer.devlimit=1000}
+2023-12-21T16:50:33,985 [main] ERROR Kernel ServerModule.initDb(line:197). Module passwordGenerator start config: {paul.port=8098, paul.connection_timeout=300, paul.host=127.0.0.1, paul.timeout=5}
+2023-12-21T16:50:34,003 [main] ERROR Kernel ServerModule.initDb(line:197). Module wirelessCommon start config: {wificab.url=http://localhost:8080/wifi-cab/, memory.time.sec=604800, copy.ems.name.to.hostname=false, auto.start.initialization=true, pwd.notifier.separator=, allow.collect.total_users=false, pwd.notifier.enabled=false, jerry.service.url=localhost:50051, allow.radius.setting=false, init.link.key.types=69, pwd.notifier.recipients=, wificab.disable_certificate_check=false, need.environment.params=true, wids.service.url=http://localhost:9095, allow.set.ssid.to.wds=false, dyn.tunnel.scheduler.delay.time.seconds=60, wificab.secret=c8b764b4f2befbcd9bd9da81552f555a, wificab.timeout=60, wificab.enabled=true, wids.separator=, disable.ofter.ssid=true, need.params.in.radius.accounting=false, jerry.enabled=true, jerry.separator=, wificab.separator=, dhcp.static.hosts=/etc/dhcp/static/hosts.conf, init.fail.delete=true, alert.associate_client.send_step=3, allow.collect.uplink_load=false}
+2023-12-21T16:50:34,088 [main] ERROR Kernel ServerModule.initDb(line:197). Module tl1 start config: {process.profile.by.text=true, telnet.port=9340, tid.mode=NAME, telnet.handler.pool.size=5, retries.count=1, synchronize.pon.automatically=true, max.command.time=180, telnet.use=false, telnet.connection.timeout.sec=0, filter.global.enabled=false, commander.pool.size=12}
+2023-12-21T16:50:34,089 [main] ERROR Kernel ServerModule.initDb(line:197). Module tftpserver start config: {tftp.boot.images=uboot_images, tftp.station.images=station_images, tftp.boot=/tftpboot, tftp.addr=10.0.2.15, tftp.config.dir=ems, tftp.port=69}
+2023-12-21T16:50:34,091 [main] ERROR Kernel ServerModule.initDb(line:197). Module ponCommon start config: {ont.min.count=5, ont.changes.server.handle=true, sync.interactive.mode.needSync=true, ont.changes.publish.data=true}
+2023-12-21T16:50:34,106 [main] ERROR Kernel ServerModule.initDb(line:197). Module ma4000 start config: {autocommit=true, maxSlotSize=16}
+2023-12-21T16:50:34,197 [main] ERROR gepon GePonServerModule.init2(line:146). FW file for updating NTE-RG:revB not assigned. Auto-update of FW NTE-RG14xx:rev.B is impossible!
+2023-12-21T16:50:34,571 [main] ERROR Kernel ServerBuilder.checkModulesWithLicence(line:980). Devices for delete from Licence : {ACS=[ HonestGroup: title=ACS server; countLic=1; hasLic=0; typeList=[ACS] ], MES5448=[ HonestGroup: title=MES 5448; countLic=3; hasLic=0; typeList=[MES5448] ], WiFi=; maxSize = 3; currentSize = 0}
+2023-12-21T16:50:43,097 [main] ERROR Acs AcsCommander.initAcsConfig(line:38). Отсутствует модуль 'acs'
+2023-12-21T16:50:43,569 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2023-12-21T16:50:43,574 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2023-12-21T16:50:43,676 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-12-21T16:50:43,677 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v.1.8.6 created.
+2023-12-21T16:50:43,687 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.eltex.ems.web.server.db.monitor.EltexRamJobStore - RAMJobStore initialized.
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v1.8.6) 'Monitor' with instanceId '1'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.eltex.ems.web.server.db.monitor.EltexRamJobStore' - which does not support persistence. and is not clustered.
+
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'Monitor' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-12-21T16:50:43,688 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 1.8.6
+2023-12-21T16:50:45,731 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler Monitor_$_1 started.
+2023-12-21T16:50:45,832 [main] ERROR Kernel Server.main(line:291). Init EMS server errors: 
+Ошибка БД при загрузке модуля 'acs':
+Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+Инциализация модуля 'acs' остановлена. Модуль будет удалён.
+
+Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; Total = 166
+
+2023-12-21T16:50:46,483 [main] ERROR Kernel Server.main(line:302). -----------V--------------- EMS_SERVER is started -------------V-----------
+2023-12-21T16:50:47,587 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = state
+org.eltex.ems.web.common.exception.EltexException: Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:419) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:483) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.server.SnmpServer.getServerState(SnmpServer.java:83) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:110) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T16:50:47,663 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics SystemReportStorage.saveReport(line:32). MonitorReport [ type = ERROR; name = EmsServerDiagnostics; msg = EMS server diagnostics:
+- get '5' parameters for diagnostics.
+Error on getting 'state': Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1
+Diagnostics complete:
+- total controlled parameters: 0
+- alerts generated: 0
+- not found: 0 ]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics Monitor.execute(line:369). [EmsServerDiagnostics] Total time spent: 00:01 min:sec, ERROR
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.println(line:375). [Monitor_EmsServerDiagnostics-1] INFO org.quartz.core.JobRunShell - Job group1.EmsServerDiagnostics threw a JobExecutionException: 
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). org.quartz.JobExecutionException: Error: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ] [See nested exception: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ]]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:342)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.quartz.core.JobRunShell.run(JobRunShell.java:223)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). Caused by: [ EltexException (EltexException.SERVER) : codeError = 1000; msg = 'Системная ошибка обработки SNMP запроса: TIMEOUT/Timeout: 300 ms, device ip = 127.0.0.1'; infoObject = 'null' ]
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:419)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.snmp.SnmpHandler.checkSnmpResponse(SnmpHandler.java:483)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.server.SnmpServer.getServerState(SnmpServer.java:83)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:110)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104)
+2023-12-21T16:50:47,664 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315)
+2023-12-21T16:50:47,665 [Monitor_EmsServerDiagnostics-1] ERROR Kernel Server$1.print(line:370). 	... 2 more
+2023-12-21T17:08:58,212 [Shutdown] ERROR Kernel ServerShutdownHook.run(line:30). ============== Start shutdown. Waiting for real work is finished. ===========
+2023-12-21T17:08:58,237 [Shutdown] ERROR Kernel Listener.fillStatisticsInfo(line:298). id                           : -1
+sessionId                    : null
+started                      : false
+errMsg                       : null
+errDate                      : null
+Примечание                   : user_ip=192.168.56.1; user=admin; Action=CLOSE_GUI; sessionId=admin_192.168.56.1_2023-12-21_16-52-28.521; commandId=CMD:CLOSE_GUI_admin_SYSTEM_2023-12-21_17:08:52.461; Type=SYSTEM |  objId=-1; treeObj=null; method=DESTROY_APPLET
+Текущее состояние            : Свободен
+Дата создания                : Thu Dec 21 16:51:10 MSK 2023
+Кол-во обращений             : 131
+Общее время (dd:hh:mm:ss.ms) : 00:00:17:47.285 (1067285)
+В работе (dd:hh:mm:ss.ms)    : 00:00:00:03.593 (3593)
+Мин, мсек                    : 2
+Среднее, мсек                : 27
+Макс, мсек                   : 2046
+Акция (для макс)             : user_ip=192.168.56.1; user=admin; Action=AUTH_USER; sessionId=-1; commandId=CMD:AUTH_USER_admin_SYSTEM_2023-12-21_16:52:27.842; Type=SYSTEM |  objId=-1; treeObj=null; method=AUTH_USER
+currentAction                : 
+startAction                  : 
+2023-12-21T17:09:34,276 [main] ERROR Kernel Server.main(line:230). 
+
+-------------------------------------- START EMS_SERVER --------------------------------------------
+2023-12-21T17:09:34,312 [main] ERROR Kernel Server.main(line:234). EMS version (from server.jar manifest) : 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T17:09:34,313 [main] ERROR Kernel Server$1.println(line:375). ----- test ERR ------- 
+2023-12-21T17:09:34,392 [main] ERROR Kernel Server.init(line:403). init: Server version = 3.31-11857 (29.09.23 16:41:32)
+2023-12-21T17:09:34,392 [main] ERROR Kernel Server.init(line:405). JAVA version = 1.8.0_362
+2023-12-21T17:09:35,697 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Starting...
+2023-12-21T17:09:35,737 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,605 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - tree - Start completed.
+2023-12-21T17:09:37,621 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Starting...
+2023-12-21T17:09:37,621 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,678 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - event - Start completed.
+2023-12-21T17:09:37,679 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Starting...
+2023-12-21T17:09:37,679 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,757 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - ont - Start completed.
+2023-12-21T17:09:37,760 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Starting...
+2023-12-21T17:09:37,761 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:37,795 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - syslog - Start completed.
+2023-12-21T17:09:46,988 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - cache - Starting...
+2023-12-21T17:09:46,988 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,107 [main] ERROR Kernel Server$1.println(line:375). [main] ERROR com.zaxxer.hikari.pool.HikariPool - cache - Exception during pool initialization.
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T17:09:48,108 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+2023-12-21T17:09:48,109 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+2023-12-21T17:09:48,110 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+2023-12-21T17:09:48,302 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+2023-12-21T17:09:48,303 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.HikariConnectionPool.<init>(HikariConnectionPool.java:49)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.createPool(MultiConnectionPool.java:73)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.MultiConnectionPool.addPools(MultiConnectionPool.java:61)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.db.ConnectionsDB.init(ConnectionsDB.java:233)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.module.ServerModule.initDBPools(ServerModule.java:127)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.ServerBuilder.checkModules(ServerBuilder.java:465)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.init(Server.java:502)
+2023-12-21T17:09:48,304 [main] ERROR Kernel Server$1.print(line:370). 	at org.eltex.ems.web.server.Server.main(Server.java:252)
+2023-12-21T17:09:48,342 [main] ERROR Kernel ServerBuilder.checkModules(line:470). Disable module 'acs'; checkDb error : Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+2023-12-21T17:09:48,363 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Starting...
+2023-12-21T17:09:48,363 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,442 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - radius - Start completed.
+2023-12-21T17:09:48,524 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Starting...
+2023-12-21T17:09:48,524 [main] ERROR Kernel Server$1.println(line:375). [main] WARN com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=org.gjt.mm.mysql.Driver was not found, trying direct instantiation.
+2023-12-21T17:09:48,570 [main] ERROR Kernel Server$1.println(line:375). [main] INFO com.zaxxer.hikari.HikariDataSource - wireless - Start completed.
+2023-12-21T17:09:48,723 [main] ERROR Kernel ServerModule.initDb(line:197). Module gePon start config: {min_nterg14_version=-1.0.0, tftp_host_no_vlan=10.0.2.15, nterg14_image=, max_update=5, nterg14_revb_image=, min_nterg24_version=-1.0.0, max_error=5}
+2023-12-21T17:09:48,836 [main] ERROR Kernel ServerModule.initDb(line:197). Module apb start config: {}
+2023-12-21T17:09:48,837 [main] ERROR Kernel ServerModule.initDb(line:197). Module pcrf start config: {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T17:09:48,866 [main] ERROR Kernel ServerModule.initDb(line:197). Module voipCommon start config: {auto.change.ports.by.traps=false}
+2023-12-21T17:09:48,867 [main] ERROR Kernel ServerModule.initDb(line:197). Module gPon start config: {gpon.version_and_eq_req=true, gpon.rssi_req=true, gpon.ont.tftp.host=10.0.2.15, gui.use_gpon_serial_in_hex=false}
+2023-12-21T17:09:48,916 [main] ERROR Kernel ServerModule.initDb(line:197). Module netconf start config: {netconf.mongodb.url=mongodb://localhost:27017/netconf, netconf.module.enable=false}
+2023-12-21T17:09:48,931 [main] ERROR Kernel ServerModule.initDb(line:197). Module radius start config: {radius.restart.enabled=true, radius.restart.timeout=45, radius.service.name=eltex-radius, ems.host.ip.to.radius=127.0.0.1, radius.localhost.secret=eltex, radius.restart.min_interval=60}
+2023-12-21T17:09:48,934 [main] ERROR Kernel ServerModule.initDb(line:197). Module msan start config: {fxs.autoreload.time.s=0}
+2023-12-21T17:09:48,944 [main] ERROR Kernel ServerModule.initDb(line:197). Module airtune start config: {airtune.api.timeout=5, airtune.api.port=8089, airtune.api.conn_timeout=300, airtune.api.host=10.0.2.15, airtune.api.protocol=http}
+2023-12-21T17:09:49,854 [main] ERROR Kernel ServerModule.initDb(line:197). Module ltp start config: {ltp_n.autocommit=false}
+2023-12-21T17:09:49,905 [main] ERROR Kernel ServerModule.initDb(line:197). Module ftpserver start config: {tftp.boot=/tftpboot, ftp.config.dir=ems, ftp.addr=10.0.2.15, ftp.station.images=station_images, ftp.boot.images=uboot_images, ftp.login=ftp, ftp.password=ftp, ftp.port=21}
+2023-12-21T17:09:49,914 [main] ERROR Kernel ServerModule.initDb(line:197). Module softwlc.nbi start config: {nbi.connection.timeout.sec=30, nbi.url=http://localhost:8080/axis2/services/RadiusNbiService?wsdl, nbi.enabled=true, nbi.password=softwlc, nbi.username=softwlc_service, nbi.request.timeout.sec=120}
+2023-12-21T17:09:50,016 [main] ERROR Kernel ServerModule.initDb(line:197). Module system start config: {gui.settings.separator.trap=, snmp.timeout.prevention=true, alert.mail.port=25, tree.object.attention.alert.priority=CRITICAL, conf.after.add.or.connect.ok=false, snmp.sender.ssl_protocol=TLSv1.2, snmp.sender.inform_timeout=1000, snmp.allow=true, save.filter.value=true, db.tmp.files.dir=/tmp, disable.ap.reset=false, current.locale=ru_RU, alert.syslog.copy=false, snmp.sender.inform_retries=2, monitoring.use=false, tomcat.url=http://10.0.2.15:8080, trap.handler.max_queue=20, snmp.sender.priority.list=CRITICAL, MAJOR, trap.handler.type=AUTO, ping.handler_not_find=CRITICAL, alert.mail.encryption=NONE, use.initialization.link.params=false, tmp.dir=/tmp/ems, kladr.token=, snmp.sender.manager_port=162, table.rowcount=true, ip.adress=10.0.2.15, geocoder.key=, alert.subject=Eltex.EMS, check_hostname=false, support.email.address=, snmp.sender.enable=false, alert.password=password, alert.login=login, trap.handler.max_ip=5, async.process.pool.size=60, user_access_type=BY_DOMAIN, mode.choiceactivealerts=false, snmp.sender.community=public, snmp.sender.separator=, gui.frame.title=Eltex.EMS, alert.set.finish.date.auto=false, snmp.sender.coldstart_enable=true, snmp.sender.enterprise=1.3.6.1.4.1.35265.2.1, snmp.sender.notif_type=1.3.6.1.4.1.35265.3.102, monitor.log.level=ERROR, alert.from=login@mail.server, use.geocoder=GOOGLE, tomcat.urlembeded=http://10.0.2.15:8080, alert.body=Message from '%s', date '%s', type '%s'., alert.separator=, created.session.ping.timeout=121, gui.settings.separator=, http.timeout=300, sync.after.add.or.connect.ok=true, keep.processes.time=24, timeout.connect.lost=120, icmp.allow=true, shared.files.dir=/var/ems-data, snmp.trap.queue.size=20000, log.server.commands=, gui.hide_help_buttons=false, snmp.sender.version=trapv2, mandatory.initialization.link.params=false, snmp.min_timeout.msec=300, alert.enable=false, ip.pingbuffer.pool.size=10, trap.forbid=false, snmp.sender.transliterate=true, alert.mailserver=mail.server, acs.gui.mode=false, ip.pingbuffer.period=60, user.trap=false, ip.pingbuffer.clear.timeout=7200, snmp.sender.manager_ip=192.168.1.1, ip.pingbuffer.flags=-r3 -i 5 -p 500, mode.autoselect=false, ip.pingbuffer.devlimit=1000}
+2023-12-21T17:09:50,057 [main] ERROR Kernel ServerModule.initDb(line:197). Module passwordGenerator start config: {paul.port=8098, paul.connection_timeout=300, paul.host=127.0.0.1, paul.timeout=5}
+2023-12-21T17:09:50,079 [main] ERROR Kernel ServerModule.initDb(line:197). Module wirelessCommon start config: {wificab.url=http://localhost:8080/wifi-cab/, memory.time.sec=604800, copy.ems.name.to.hostname=false, auto.start.initialization=true, pwd.notifier.separator=, allow.collect.total_users=false, pwd.notifier.enabled=false, jerry.service.url=localhost:50051, allow.radius.setting=false, init.link.key.types=69, pwd.notifier.recipients=, wificab.disable_certificate_check=false, need.environment.params=true, wids.service.url=http://localhost:9095, allow.set.ssid.to.wds=false, dyn.tunnel.scheduler.delay.time.seconds=60, wificab.secret=c8b764b4f2befbcd9bd9da81552f555a, wificab.timeout=60, wificab.enabled=true, wids.separator=, disable.ofter.ssid=true, need.params.in.radius.accounting=false, jerry.enabled=true, jerry.separator=, wificab.separator=, dhcp.static.hosts=/etc/dhcp/static/hosts.conf, init.fail.delete=true, alert.associate_client.send_step=3, allow.collect.uplink_load=false}
+2023-12-21T17:09:50,135 [main] ERROR Kernel ServerModule.initDb(line:197). Module tl1 start config: {process.profile.by.text=true, telnet.port=9340, tid.mode=NAME, telnet.handler.pool.size=5, retries.count=1, synchronize.pon.automatically=true, max.command.time=180, telnet.use=false, telnet.connection.timeout.sec=0, filter.global.enabled=false, commander.pool.size=12}
+2023-12-21T17:09:50,146 [main] ERROR Kernel ServerModule.initDb(line:197). Module tftpserver start config: {tftp.boot.images=uboot_images, tftp.station.images=station_images, tftp.boot=/tftpboot, tftp.addr=10.0.2.15, tftp.config.dir=ems, tftp.port=69}
+2023-12-21T17:09:50,152 [main] ERROR Kernel ServerModule.initDb(line:197). Module ponCommon start config: {ont.min.count=5, ont.changes.server.handle=true, sync.interactive.mode.needSync=true, ont.changes.publish.data=true}
+2023-12-21T17:09:50,155 [main] ERROR Kernel ServerModule.initDb(line:197). Module ma4000 start config: {autocommit=true, maxSlotSize=16}
+2023-12-21T17:09:50,355 [main] ERROR gepon GePonServerModule.init2(line:146). FW file for updating NTE-RG:revB not assigned. Auto-update of FW NTE-RG14xx:rev.B is impossible!
+2023-12-21T17:09:50,532 [main] ERROR Kernel ServerBuilder.checkModulesWithLicence(line:980). Devices for delete from Licence : {ACS=[ HonestGroup: title=ACS server; countLic=1; hasLic=0; typeList=[ACS] ], MES5448=[ HonestGroup: title=MES 5448; countLic=3; hasLic=0; typeList=[MES5448] ], WiFi=; maxSize = 3; currentSize = 0}
+2023-12-21T17:09:55,916 [main] ERROR Acs AcsCommander.initAcsConfig(line:38). Отсутствует модуль 'acs'
+2023-12-21T17:09:56,146 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2023-12-21T17:09:56,148 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2023-12-21T17:09:56,194 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-12-21T17:09:56,194 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Quartz Scheduler v.1.8.6 created.
+2023-12-21T17:09:56,195 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.eltex.ems.web.server.db.monitor.EltexRamJobStore - RAMJobStore initialized.
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v1.8.6) 'Monitor' with instanceId '1'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.eltex.ems.web.server.db.monitor.EltexRamJobStore' - which does not support persistence. and is not clustered.
+
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'Monitor' initialized from default resource file in Quartz package: 'quartz.properties'
+2023-12-21T17:09:56,196 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 1.8.6
+2023-12-21T17:09:57,789 [main] ERROR Kernel Server$1.println(line:375). [main] INFO org.quartz.core.QuartzScheduler - Scheduler Monitor_$_1 started.
+2023-12-21T17:09:58,559 [main] ERROR Kernel Server.main(line:291). Init EMS server errors: 
+Ошибка БД при загрузке модуля 'acs':
+Failed to initialize pool: Access denied for user 'javauser'@'127.0.0.1' to database 'acscache'
+Инциализация модуля 'acs' остановлена. Модуль будет удалён.
+
+Max DB connections = 151. EMS DB pools max conn info: ont=40; tree=20; wireless=30; syslog=4; event=32; radius=40; Total = 166
+
+2023-12-21T17:09:59,129 [main] ERROR Kernel Server.main(line:302). -----------V--------------- EMS_SERVER is started -------------V-----------
+2023-12-21T17:10:00,323 [Monitor_EmsServerDiagnostics-4] ERROR Kernel Monitor.isJobActive(line:520). [EmsServerDiagnostics] Monitor is already active. Activation counter = 2
+2023-12-21T17:10:00,331 [Monitor_EmsServerDiagnostics-4] ERROR Kernel Monitor.sendAlreadyLaunched(line:441). [EmsServerDiagnostics] Error - already launched
+org.eltex.ems.web.common.exception.EltexException: Монитор 'EmsServerDiagnostics' уже запущен. Необходимо увеличить период запуска монитора!
+	at org.eltex.ems.web.server.monitor.Monitor.sendAlreadyLaunched(Monitor.java:432) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:265) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,456 [Monitor_EmsServerDiagnostics-1] ERROR Kernel ObjectHandler.handleCommand(line:213). Error: command = [ Command: action = GET_NET_INFO; objectType = EMS_SERVER; sessionId = session; guiModuleId = null; clientInetAddress = null; addToResponse = true; needLogs = false; function = Function{mode=null, type=null, objId=1, treeObj=null, tabName='null', methodName='null', description='null', object=eth0, processId='null', logs=null}; commandId = CMD:GET_NET_INFO_EMS_SERVER_2023-12-21_17:10:01.402; additionalCommands.size = 0 ]
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,456 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.loadEmsServerProps(line:359). Error: state = net
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]
+2023-12-21T17:10:01,458 [Monitor_EmsServerDiagnostics-1] ERROR ems_server_diagnostics EmsServerDiagnosticsMonitor.process(line:109). Error on getting 'net': Сетевой интерфейс 'eth0' не найден.
+org.eltex.ems.web.common.exception.MessageException: Сетевой интерфейс 'eth0' не найден.
+	at org.eltex.ems.web.server.command.server.SnmpServer.getNetInterfaceInfo(SnmpServer.java:227) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.emsMonitoring.EmsMonitoringCommonHandler.handle(EmsMonitoringCommonHandler.java:126) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.Commander.handleCommand(Commander.java:96) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:208) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.command.ObjectHandler.handleCommand(ObjectHandler.java:184) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.loadEmsServerProps(EmsServerDiagnosticsMonitor.java:349) ~[ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.monitors.emsServer.EmsServerDiagnosticsMonitor.process(EmsServerDiagnosticsMonitor.java:104) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.eltex.ems.web.server.monitor.Monitor.execute(Monitor.java:315) [ems_server.jar:3.31-11857 (29.09.23 16:41:32)]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:223) [quartz-1.8.6.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:549) [quartz-1.8.6.jar:?]

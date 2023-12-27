@@ -1,0 +1,4 @@
+2023-12-21T17:10:21,269 [main] ERROR org.eltex.portal.commons.ApplicationStartupListener ApplicationStartupListener.run(line:34). Eltex Portal Constructor 1.27-4153 server started with arguments: 
+--config.files=/etc/eltex-portal-constructor/application.conf
+--logging.config=/etc/eltex-portal-constructor/log4j2.xml
+2023-12-21T17:10:21,280 [main] ERROR org.eltex.portal.admin.app.EltexPortalConstructorApplication EltexPortalConstructorApplication.main(line:43). Starting Eltex Portal constructor service. Version: 1.27-4153 (13.10.23 15:33:43)

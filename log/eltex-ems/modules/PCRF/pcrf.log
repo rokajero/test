@@ -1,0 +1,4 @@
+2023-12-21T16:50:20,416 [main] DEBUG PCRF PcrfApi.init(line:105). PCRF module config: params = {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T16:50:31,526 [main] DEBUG PCRF PcrfApi.init(line:105). PCRF module config: params = {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T17:09:41,366 [main] DEBUG PCRF PcrfApi.init(line:105). PCRF module config: params = {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
+2023-12-21T17:09:48,838 [main] DEBUG PCRF PcrfApi.init(line:105). PCRF module config: params = {pcrf.url=http://localhost:7070, pcrf.read.write.timeout.s=11, pcrf.connect.timeout.s=11, pcrf.enabled=true}
